@@ -1,0 +1,23 @@
+FROM node:22.15.1-slim
+
+WORKDIR /app/root
+
+# Install system dependencies
+RUN apt-get update && \
+  apt-get install -y \
+  python3 \
+  curl \
+  && apt-get clean
+
+# Copy package files first for better caching
+COPY package.json bun.lock ./
+COPY asudem-storefront/package.json ./asudem-storefront/
+
+
+RUN npm install -g bun@latest && \
+  bun --version
+
+# Install dependencies using bun
+RUN cd ./asudem-storefront && bun install
+
+CMD ["bun","run", "dev"]
