@@ -105,6 +105,9 @@ const Payment = ({
   useEffect(() => {
     setError(null)
   }, [isOpen])
+  useEffect(() => {
+    console.log(availablePaymentMethods)
+  }, [availablePaymentMethods])
 
   return (
     <div className="bg-white">

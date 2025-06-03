@@ -1,5 +1,5 @@
 import React from "react"
-import { Cash, CreditCard } from "@medusajs/icons"
+import { Cash, CreditCard, TaxInclusive } from "@medusajs/icons"
 
 import Ideal from "@modules/common/icons/ideal"
 import Bancontact from "@modules/common/icons/bancontact"
@@ -34,6 +34,10 @@ export const paymentInfoMap: Record<
     title: "Cash on Delivery",
     icon: <Cash />,
   },
+  "pp_bank-transfer-payment_bank-transfer-payment": {
+    title: "Bank transfer",
+    icon: <TaxInclusive />,
+  },
   // Add more payment providers here
 }
 
@@ -49,6 +53,9 @@ export const isManual = (providerId?: string) => {
 }
 export const isCOD = (providerId?: string) => {
   return providerId?.startsWith("pp_cod-payment_cod-payment")
+}
+export const isBankTransfer = (providerId?: string) => {
+  return providerId?.startsWith("pp_bank-transfer-payment_bank-transfer-payment")
 }
 
 // Add currencies that don't need to be divided by 100
