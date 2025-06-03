@@ -127,9 +127,11 @@ async function getCountryCode(
  */
 export async function middleware(request: NextRequest) {
   let redirectUrl = request.nextUrl.href
-  console.log(`${BACKEND_URL}/store/regions`)
-  console.log(PUBLISHABLE_API_KEY)
-  console.log(`Default region: ${DEFAULT_REGION}`)
+  const url = request.nextUrl.clone();
+
+  // !TODO Remove this when maintenance is off on MASTER BRANCH
+    url.pathname = `/en/maintenance`;
+    return NextResponse.rewrite(url);
 
   let response = NextResponse.redirect(redirectUrl, 307)
 
