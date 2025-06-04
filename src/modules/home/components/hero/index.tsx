@@ -1,8 +1,8 @@
 "use client"
-
 import { useEffect, useState } from "react"
 import AOS from "aos"
 import "aos/dist/aos.css"
+import Image from "next/image"
 
 const Hero = () => {
   useEffect(() => {
@@ -13,11 +13,13 @@ const Hero = () => {
     <div className="overflow-x-hidden antialiased w-full">
       <div className="relative z-30 items-center justify-center w-screen h-screen">
         <div className="h-screen">
-          <img
+          <Image
             className="object-cover w-full h-full"
-            src="https://sdmntprnortheu.oaiusercontent.com/files/00000000-c778-61f4-9980-95a8b62474c5/raw?se=2025-05-26T13%3A54%3A57Z&sp=r&sv=2024-08-04&sr=b&scid=64bd0dfa-7158-530b-a206-5a1a8d8f2c7d&skoid=0a4a0f0c-99ac-4752-9d87-cfac036fa93f&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2025-05-26T02%3A44%3A40Z&ske=2025-05-27T02%3A44%3A40Z&sks=b&skv=2024-08-04&sig=8ew26bwGYYg1Nj%2BRHMJUlwz6TuJWs32QNR3Mg80NNBM%3D"
-            title="YouTube video player"
-          ></img>
+            width={1920}
+            height={1080}
+            src="/l3awad_hero.png"
+            alt="YouTube video player"
+          ></Image>
         </div>
         <div className="absolute inset-0 z-20 flex items-center justify-center w-full h-screen  bg-opacity-50" />
         <div
