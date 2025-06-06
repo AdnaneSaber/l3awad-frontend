@@ -5,7 +5,6 @@ import { listCollections } from "@lib/data/collections"
 import { getRegion } from "@lib/data/regions"
 import OurProducts from "@modules/home/components/our-products"
 import Services from "@modules/home/components/services"
-import TechnicalSpecifications from "@modules/home/components/technical-specifications"
 import Features from "@modules/home/components/features"
 import ListAbout from "@modules/home/components/list-about"
 import Swiper2 from "@modules/home/components/theswip"
@@ -40,7 +39,6 @@ export default async function Home(props: {
       <Hero />
       <OurProducts />
       <Services />
-      <TechnicalSpecifications />
       <ListAbout />
       <Swiper2 />
       <Incentive />
