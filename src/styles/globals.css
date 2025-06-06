@@ -110,3 +110,25 @@
     @apply text-[32px] leading-[44px] font-semibold;
   }
 }
+.swiper-container {
+  width: 100%;
+  height: 50vh;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.thumbs .swiper-slide img {
+  border: 2px solid transparent;
+  border-radius: 10px;
+}
+
+.thumbs .swiper-slide-thumb-active img {
+  border-color: rgb(79 70 229); /* Tailwind indigo-600 */
+}

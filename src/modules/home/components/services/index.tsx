@@ -4,7 +4,20 @@ const Services = () => {
   return (
     <section className="">
       <div className="container max-w-xl p-6 mx-auto space-y-12 lg:px-8 lg:max-w-7xl">
+        <h2 className="text-3xl font-bold tracking-tight text-black sm:text-4xl">
+          What we offer
+        </h2>
         <div className="grid lg:gap-8 lg:grid-cols-2 lg:items-center">
+          <div aria-hidden="true" className="mt-10 lg:mt-0">
+            <img
+              width="734"
+              height="458"
+              alt="Services illustration"
+              src="/product_images/wood-industry-734x458.jpg"
+              className="mx-auto rounded-lg shadow-lg dark-bg-gray-500"
+              style={{ color: "transparent" }}
+            />
+          </div>
           <div>
             <div className="mt-4 space-y-12">
               <div className="flex">
@@ -105,16 +118,6 @@ const Services = () => {
                 </div>
               </div>
             </div>
-          </div>
-          <div aria-hidden="true" className="mt-10 lg:mt-0">
-            <img
-              width="734"
-              height="458"
-              alt="Services illustration"
-              src="/product_images/wood-industry-734x458.jpg"
-              className="mx-auto rounded-lg shadow-lg dark-bg-gray-500"
-              style={{ color: "transparent" }}
-            />
           </div>
         </div>
       </div>
