@@ -23,12 +23,14 @@ async function getRegionMap(cacheId: string) {
     regionMapUpdated < Date.now() - 3600 * 1000
   ) {
     // Add retry logic for Fly.io cold starts
-    const maxRetries = 3;
-    const backoffMs = 2000; // Start with 2 second delay
-    
+    const maxRetries = 3
+    const backoffMs = 2000 // Start with 2 second delay
+
     for (let attempt = 0; attempt < maxRetries; attempt++) {
       try {
-        console.log(`Attempting to fetch regions, attempt ${attempt + 1}/${maxRetries}`)
+        console.log(
+          `Attempting to fetch regions, attempt ${attempt + 1}/${maxRetries}`
+        )
         const response = await fetch(`${BACKEND_URL}/store/regions`, {
           headers: {
             "x-publishable-api-key": PUBLISHABLE_API_KEY!,
@@ -38,22 +40,26 @@ async function getRegionMap(cacheId: string) {
             tags: [`regions-${cacheId}`],
           },
           cache: "force-cache",
-        });
+        })
 
         if (response.status === 503 || response.status === 502) {
           // Server is likely starting up
-          console.log(`Server starting up, waiting ${backoffMs}ms before retry...`);
-          await new Promise(resolve => setTimeout(resolve, backoffMs * (attempt + 1)));
-          continue;
+          console.log(
+            `Server starting up, waiting ${backoffMs}ms before retry...`
+          )
+          await new Promise((resolve) =>
+            setTimeout(resolve, backoffMs * (attempt + 1))
+          )
+          continue
         }
 
-        const json = await response.json();
+        const json = await response.json()
 
         if (!response.ok) {
-          throw new Error(json.message);
+          throw new Error(json.message)
         }
 
-        const { regions } = json;
+        const { regions } = json
 
         if (!regions?.length) {
           throw new Error(
@@ -66,22 +72,25 @@ async function getRegionMap(cacheId: string) {
           region.countries?.forEach((c) => {
             regionMapCache.regionMap.set(c.iso_2 ?? "", region)
           })
-        });
+        })
 
-        regionMapCache.regionMapUpdated = Date.now();
-        return regionMapCache.regionMap;
-
+        regionMapCache.regionMapUpdated = Date.now()
+        return regionMapCache.regionMap
       } catch (error) {
         if (attempt === maxRetries - 1) {
-          throw new Error(`Failed to fetch regions after ${maxRetries} attempts: ${error}`);
+          throw new Error(
+            `Failed to fetch regions after ${maxRetries} attempts: ${error}`
+          )
         }
-        console.log(`Attempt ${attempt + 1} failed, retrying...`);
-        await new Promise(resolve => setTimeout(resolve, backoffMs * (attempt + 1)));
+        console.log(`Attempt ${attempt + 1} failed, retrying...`)
+        await new Promise((resolve) =>
+          setTimeout(resolve, backoffMs * (attempt + 1))
+        )
       }
     }
   }
 
-  return regionMapCache.regionMap;
+  return regionMapCache.regionMap
 }
 
 /**
@@ -127,11 +136,6 @@ async function getCountryCode(
  */
 export async function middleware(request: NextRequest) {
   let redirectUrl = request.nextUrl.href
-  const url = request.nextUrl.clone();
-
-  // !TODO Remove this when maintenance is off on MASTER BRANCH
-    url.pathname = `/en/maintenance`;
-    return NextResponse.rewrite(url);
 
   let response = NextResponse.redirect(redirectUrl, 307)
 
