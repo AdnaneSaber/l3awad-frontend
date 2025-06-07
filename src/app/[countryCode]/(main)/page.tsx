@@ -10,6 +10,7 @@ import ListAbout from "@modules/home/components/list-about"
 import Swiper2 from "@modules/home/components/theswip"
 import Philosophie from "@modules/home/components/philosophie"
 import Incentive from "@modules/home/components/incentive"
+import WhyUs from "@modules/home/components/why-us"
 
 export const metadata: Metadata = {
   title: "Medusa Next.js Starter Template",
@@ -42,6 +43,7 @@ export default async function Home(props: {
       <ListAbout />
       <Swiper2 />
       <Incentive />
+      <WhyUs />
       <Features />
       <Philosophie />
       <div className="py-12">

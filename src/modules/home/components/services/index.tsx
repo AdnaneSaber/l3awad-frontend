@@ -13,8 +13,8 @@ const Services = () => {
               width="734"
               height="458"
               alt="Services illustration"
-              src="/product_images/wood-industry-734x458.jpg"
-              className="mx-auto rounded-lg shadow-lg dark-bg-gray-500"
+              src="/home/old-man.webp"
+              className="mx-auto shadow-lg dark-bg-gray-500"
               style={{ color: "transparent" }}
             />
           </div>
