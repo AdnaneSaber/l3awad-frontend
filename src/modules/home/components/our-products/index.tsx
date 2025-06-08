@@ -1,13 +1,18 @@
+// our-products.tsx
 import { products } from "@lib/data/ourProduct"
 import React from "react"
 
-const OurProducts = () => {
+type OurProductsProps = {
+  title?: string
+}
+
+const OurProducts = ({ title = "Latest Product" }: OurProductsProps) => {
   return (
     <div className="bg-white py-6 sm:py-8 lg:py-12">
       <div className="mx-auto max-w-screen-2xl px-4 md:px-8">
         <div className="mb-10 md:mb-16">
           <h2 className="text-3xl font-bold tracking-tight text-black sm:text-4xl">
-            Latest product
+            {title}
           </h2>
         </div>
 
@@ -22,13 +27,13 @@ const OurProducts = () => {
                 <img
                   src={product.images[0]}
                   alt={product.name}
-                  className="absolute inset-0 h-full w-full object-cover opacity-100 group-hover:opacity-0"
+                  className="absolute inset-0 h-full w-full object-cover opacity-100 group-hover:opacity-0 transition-opacity duration-500 ease-in-out"
                 />
 
                 <img
                   src={product.images[1]}
                   alt={product.name}
-                  className="absolute inset-0 h-full w-full object-cover opacity-0 group-hover:opacity-100"
+                  className="absolute inset-0 h-full w-full object-cover opacity-0 group-hover:opacity-100 transition-opacity duration-500 ease-in-out"
                 />
               </div>
 
