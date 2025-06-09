@@ -37,7 +37,7 @@ const faqs = [
 
 const ProductFaq = () => {
   return (
-    <div className="relative w-full bg-white px-6 mt-4 pb-8  shadow-xl ring-1 ring-gray-900/5 sm:max-w-2xl sm:rounded-lg sm:px-10">
+    <div className="relative w-full bg-white px-6 mt-4 pb-8  shadow-xl ring-1 ring-gray-900/5 sm:rounded-lg sm:px-10">
       <div className="mx-auto px-5 mt-2">
         <div className="flex flex-col px-4 sm:px-0 ">
           <h3 className="text-base/7 font-semibold text-gray-900 mt-4">
