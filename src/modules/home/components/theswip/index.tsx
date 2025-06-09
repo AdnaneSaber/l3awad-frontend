@@ -8,7 +8,7 @@ import TestimonialSlider from "../testimonials"
 
 const Swiper2 = () => {
   return (
-    <div className="swiper-container">
+    <div className="swiper-container max-h-[40rem]">
       <Swiper
         modules={[Autoplay]}
         loop={true}

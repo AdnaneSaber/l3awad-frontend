@@ -40,7 +40,6 @@ export default async function Home(props: {
     <>
       <Hero />
       <OurProducts title="Latest Product" />
-
       <Services />
       <ListAbout />
       <Swiper2 />
