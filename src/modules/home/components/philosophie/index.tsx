@@ -102,9 +102,7 @@ export default function Philosophie() {
                     <span className="grow">
                       <span
                         className={`block text-lg font-semibold ${
-                          activeTab === tab.id
-                            ? "text-blue-600 dark:text-blue-500"
-                            : "text-gray-800 dark:text-neutral-200"
+                          activeTab === tab.id ? "text-black" : "text-gray-800"
                         }`}
                       >
                         {tab.title}
@@ -123,7 +121,10 @@ export default function Philosophie() {
             <div className="relative">
               {tabs.map((tab) =>
                 activeTab === tab.id ? (
-                  <div key={tab.id}>
+                  <div
+                    key={tab.id}
+                    className="transition-opacity duration-500 ease-in-out opacity-100 animate-fade-in"
+                  >
                     <Image
                       className="shadow-xl rounded-xl dark:shadow-gray-900/20"
                       src={tab.image}

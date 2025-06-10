@@ -15,7 +15,7 @@ const Hero = () => {
         <div className="h-screen">
           <img
             className="object-cover w-full h-full"
-            src="https://sdmntprnortheu.oaiusercontent.com/files/00000000-c778-61f4-9980-95a8b62474c5/raw?se=2025-05-26T13%3A54%3A57Z&sp=r&sv=2024-08-04&sr=b&scid=64bd0dfa-7158-530b-a206-5a1a8d8f2c7d&skoid=0a4a0f0c-99ac-4752-9d87-cfac036fa93f&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2025-05-26T02%3A44%3A40Z&ske=2025-05-27T02%3A44%3A40Z&sks=b&skv=2024-08-04&sig=8ew26bwGYYg1Nj%2BRHMJUlwz6TuJWs32QNR3Mg80NNBM%3D"
+            src="/home/l3awad_hero.png"
             title="YouTube video player"
           ></img>
         </div>
@@ -27,14 +27,16 @@ const Hero = () => {
           <div className="flex flex-col items-center justify-center mx-auto">
             <div className="relative text-center">
               <h1 className="text-white mb-4 text-5xl font-bold font-sans italic leading-none text-center lg:text-8xl xl:text-8xl">
-                MA BOÎTE
-                <span className="text-black ml-0">MYSTER</span>
+                MA BOÎTE{" "}
+                <span className="text-black ml-0 drop-shadow-[0_0_4px_white]">
+                  MYSTER
+                </span>
               </h1>
               <p className="text-white text-sm lg:text-4xl font-sans italic text-center">
-                cachez vos affaires dans une boîte
-                <span className="text-black ml-2 uppercase font-bold">
+                cachez vos affaires dans une boîte{" "}
+                <span className="thick-underline text-[#000000] relative no-underline uppercase cursor-pointer font-bold">
                   secrète
-                </span>
+                </span>{" "}
               </p>
             </div>
           </div>

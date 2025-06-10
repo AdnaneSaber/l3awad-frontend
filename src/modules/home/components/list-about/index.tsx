@@ -144,7 +144,7 @@ const ListAbout = () => {
                 height="485"
                 className="w-full  shadow-2xl ring-1 ring-black ring-opacity-5 lg:absolute lg:left-0 lg:h-full lg:w-auto lg:max-w-none"
                 style={{ color: "transparent" }}
-                src="/home/features (2).png"
+                src="/home/features (1).png"
               />
             </div>
           </div>
