@@ -2,7 +2,7 @@ import React from "react"
 
 const ProductBlock = () => {
   return (
-    <section className="py-12">
+    <section className="py-12 justify-items-center">
       <div className="container">
         <div className="mt-24">
           <div className="mx-auto flex w-fit flex-col items-center gap-8 md:gap-12">
