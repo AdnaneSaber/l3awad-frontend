@@ -43,16 +43,16 @@ export default function CouponAccordion() {
             placeholder="Enter your coupon code"
             className="w-full px-4 py-2 border rounded-md text-sm text-slate-700 placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-blue-500"
           />
-          <a
+          <button
             className="group relative inline-block focus:ring-3 focus:outline-hidden"
-            href="#"
+            type="button"
           >
             <span className="absolute inset-0 translate-x-1.5 translate-y-1.5 bg-gray-400 transition-transform group-hover:translate-x-0 group-hover:translate-y-0"></span>
 
             <span className="relative inline-block border-2 border-current px-8 py-3 text-sm font-bold tracking-widest text-black uppercase">
-              Download
+              Apply
             </span>
-          </a>
+          </button>
         </div>
       </div>
     </div>

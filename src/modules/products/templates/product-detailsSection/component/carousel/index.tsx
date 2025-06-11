@@ -31,7 +31,7 @@ export function Carousel({
 
   return (
     <div className="flex flex-col">
-      <div className="overflow-hidden relative max-h-72 md:max-h-full ">
+      <div className="overflow-hidden relative max-h-96 md:max-h-full ">
         <div
           className="flex transition-transform ease-out duration-500"
           style={{ transform: `translateX(-${curr * 100}%)` }}
@@ -61,7 +61,7 @@ export function Carousel({
           </button>
         </div>
       </div>
-      <div className="hidden md:flex w-full gap-4 mt-8 h-8">
+      <div className="hidden md:flex w-full gap-2 mt-5 h-8">
         {thumbnails.map((t, i) => (
           <div
             key={i}

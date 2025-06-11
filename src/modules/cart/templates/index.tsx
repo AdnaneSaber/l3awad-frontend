@@ -69,7 +69,7 @@ const CartTemplate = () => {
                   </p>
                 </div>
                 <div>
-                  <div className="py-2 px-3 inline-block bg-white content-center">
+                  <div className="py-6 px-3 inline-block bg-white content-center">
                     <div className="flex items-center gap-x-1.5">
                       <button
                         type="button"
@@ -156,7 +156,7 @@ const CartTemplate = () => {
                       aria-describedby="hs-radio-delete-description"
                     />
                   </div>
-                  <label htmlFor="hs-radio-delete" className="ms-3">
+                  <label htmlFor="hs-radio-delete" className="ms-3 mt-1">
                     <span className="block text-sm font-semibold text-gray-800">
                       Delivery to curbside (by freight forwarder): 219 €
                     </span>
@@ -173,7 +173,7 @@ const CartTemplate = () => {
                       aria-describedby="hs-radio-archive-description"
                     />
                   </div>
-                  <label htmlFor="hs-radio-archive" className="ms-3">
+                  <label htmlFor="hs-radio-archive" className="ms-3 mt-1">
                     <span className="block text-sm font-semibold text-gray-800">
                       Delivery to the destination (by BALZWERK®): 379 €
                     </span>
@@ -189,7 +189,7 @@ const CartTemplate = () => {
                       aria-describedby="hs-radio-archive-description"
                     />
                   </div>
-                  <label htmlFor="hs-radio-archive" className="ms-3">
+                  <label htmlFor="hs-radio-archive" className="ms-3 mt-1">
                     <span className="block text-sm font-semibold text-gray-800">
                       Delivery includes assembly & anchoring for products with
                       safe (by BALZWERK®): 629 €
@@ -206,7 +206,7 @@ const CartTemplate = () => {
                       aria-describedby="hs-radio-archive-description"
                     />
                   </div>
-                  <label htmlFor="hs-radio-archive" className="ms-3">
+                  <label htmlFor="hs-radio-archive" className="ms-3 mt-1">
                     <span className="block text-sm font-semibold text-gray-800">
                       Pick up in the showroom (availability for pick up will be
                       communicated by email)
