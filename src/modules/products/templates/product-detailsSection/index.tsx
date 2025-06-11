@@ -56,73 +56,22 @@ export const DetailsSection = (props: any) => {
           </section>
         </div>
         <div className="w-full  mx-auto">
-          <button
-            onClick={toggleAccordion}
-            className="w-full flex justify-between items-center py-4 text-slate-800"
-          >
-            <span className="font-semibold text-sm uppercase text-black">
-              More Options
-            </span>
-            <span className="transition-transform duration-300">
-              {isOpen ? (
-                <svg
-                  className="w-4 h-4"
-                  viewBox="0 0 16 16"
-                  fill="currentColor"
-                >
-                  <path d="M3.75 7.25a.75.75 0 0 0 0 1.5h8.5a.75.75 0 0 0 0-1.5h-8.5Z" />
-                </svg>
-              ) : (
-                <svg
-                  className="w-4 h-4"
-                  viewBox="0 0 16 16"
-                  fill="currentColor"
-                >
-                  <path d="M8.75 3.75a.75.75 0 0 0-1.5 0v3.5h-3.5a.75.75 0 0 0 0 1.5h3.5v3.5a.75.75 0 0 0 1.5 0v-3.5h3.5a.75.75 0 0 0 0-1.5h-3.5v-3.5Z" />
-                </svg>
-              )}
-            </span>
-          </button>
-
-          <div
-            className={`overflow-hidden transition-all duration-300 ease-in-out ${
-              isOpen ? "max-h-40" : "max-h-0"
-            }`}
-          >
-            <div className="max-w-2xl mx-auto">
-              <label
-                htmlFor="countries"
-                className="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-400"
-              >
-                Size
-              </label>
-              <select
-                id="countries"
-                className="bg-gray-50 border border-gray-300 text-gray-900 text-sm  block w-full p-2.5 "
-              >
-                <option defaultValue={""}>Choose an option</option>
-                <option value="US">60 / 49.5cm</option>
-                <option value="CA">90 / 79.5cm</option>
-                <option value="FR">120 / 109.5cm</option>
-              </select>
-            </div>
-            <div className="max-w-2xl mx-auto">
-              <label
-                htmlFor="countries"
-                className="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-400"
-              >
-                Size
-              </label>
-              <select
-                id="countries"
-                className="bg-gray-50 border border-gray-300 text-gray-900 text-sm  block w-full p-2.5 "
-              >
-                <option defaultValue={""}>Choose an option</option>
-                <option value="US">60 / 49.5cm</option>
-                <option value="CA">90 / 79.5cm</option>
-                <option value="FR">120 / 109.5cm</option>
-              </select>
-            </div>
+          <div className="max-w-2xl mx-auto">
+            <label
+              htmlFor="countries"
+              className="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-400"
+            >
+              Size
+            </label>
+            <select
+              id="countries"
+              className="bg-gray-50 border border-gray-300 text-gray-900 text-sm  block w-full p-2.5 "
+            >
+              <option defaultValue={""}>Choose an option</option>
+              <option value="US">60 / 49.5cm</option>
+              <option value="CA">90 / 79.5cm</option>
+              <option value="FR">120 / 109.5cm</option>
+            </select>
           </div>
         </div>
         <div className="flex items-center justify-between md:flex-col md:items-start mt-2">

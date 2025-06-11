@@ -75,8 +75,7 @@ const ProductReview = () => {
                 href="#"
                 className="text-sm font-medium leading-none text-gray-900 underline hover:no-underline dark:text-white"
               >
-                {" "}
-                645 Reviews{" "}
+                645 Reviews
               </a>
             </div>
           </div>
@@ -356,7 +355,6 @@ const ProductReview = () => {
                     <input
                       id="reviews-radio-1"
                       type="radio"
-                      value=""
                       name="reviews-radio"
                       className="h-4 w-4 border-gray-300 bg-gray-100 text-primary-600 focus:ring-2 focus:ring-primary-500 dark:border-gray-600 dark:bg-gray-700 dark:ring-offset-gray-800 dark:focus:ring-primary-600"
                     />
@@ -364,15 +362,13 @@ const ProductReview = () => {
                       htmlFor="reviews-radio-1"
                       className="ms-2 text-sm font-medium text-gray-900 dark:text-gray-300"
                     >
-                      {" "}
-                      Yes: 3{" "}
+                      Yes: 3
                     </label>
                   </div>
                   <div className="flex items-center">
                     <input
                       id="reviews-radio-2"
                       type="radio"
-                      value=""
                       name="reviews-radio"
                       className="h-4 w-4 border-gray-300 bg-gray-100 text-primary-600 focus:ring-2 focus:ring-primary-500 dark:border-gray-600 dark:bg-gray-700 dark:ring-offset-gray-800 dark:focus:ring-primary-600"
                     />
@@ -380,7 +376,7 @@ const ProductReview = () => {
                       htmlFor="reviews-radio-2"
                       className="ms-2 text-sm font-medium text-gray-900 dark:text-gray-300"
                     >
-                      No: 0{" "}
+                      No: 0
                     </label>
                   </div>
                 </div>
@@ -510,7 +506,6 @@ const ProductReview = () => {
                     <input
                       id="reviews-radio-3"
                       type="radio"
-                      value=""
                       name="reviews-radio-2"
                       className="h-4 w-4 border-gray-300 bg-gray-100 text-primary-600 focus:ring-2 focus:ring-primary-500 dark:border-gray-600 dark:bg-gray-700 dark:ring-offset-gray-800 dark:focus:ring-primary-600"
                     />
@@ -518,15 +513,13 @@ const ProductReview = () => {
                       htmlFor="reviews-radio-3"
                       className="ms-2 text-sm font-medium text-gray-900 dark:text-gray-300"
                     >
-                      {" "}
-                      Yes: 1{" "}
+                      Yes: 1
                     </label>
                   </div>
                   <div className="flex items-center">
                     <input
                       id="reviews-radio-4"
                       type="radio"
-                      value=""
                       name="reviews-radio-2"
                       className="h-4 w-4 border-gray-300 bg-gray-100 text-primary-600 focus:ring-2 focus:ring-primary-500 dark:border-gray-600 dark:bg-gray-700 dark:ring-offset-gray-800 dark:focus:ring-primary-600"
                     />
@@ -534,7 +527,7 @@ const ProductReview = () => {
                       htmlFor="reviews-radio-4"
                       className="ms-2 text-sm font-medium text-gray-900 dark:text-gray-300"
                     >
-                      No: 0{" "}
+                      No: 0
                     </label>
                   </div>
                 </div>
@@ -652,7 +645,6 @@ const ProductReview = () => {
                     <input
                       id="reviews-radio-5"
                       type="radio"
-                      value=""
                       name="reviews-radio-3"
                       className="h-4 w-4 border-gray-300 bg-gray-100 text-primary-600 focus:ring-2 focus:ring-primary-500 dark:border-gray-600 dark:bg-gray-700 dark:ring-offset-gray-800 dark:focus:ring-primary-600"
                     />
@@ -660,15 +652,13 @@ const ProductReview = () => {
                       htmlFor="reviews-radio-5"
                       className="ms-2 text-sm font-medium text-gray-900 dark:text-gray-300"
                     >
-                      {" "}
-                      Yes: 0{" "}
+                      Yes: 0
                     </label>
                   </div>
                   <div className="flex items-center">
                     <input
                       id="reviews-radio-6"
                       type="radio"
-                      value=""
                       name="reviews-radio-3"
                       className="h-4 w-4 border-gray-300 bg-gray-100 text-primary-600 focus:ring-2 focus:ring-primary-500 dark:border-gray-600 dark:bg-gray-700 dark:ring-offset-gray-800 dark:focus:ring-primary-600"
                     />
@@ -676,7 +666,7 @@ const ProductReview = () => {
                       htmlFor="reviews-radio-6"
                       className="ms-2 text-sm font-medium text-gray-900 dark:text-gray-300"
                     >
-                      No: 0{" "}
+                      No: 0
                     </label>
                   </div>
                 </div>
@@ -802,7 +792,6 @@ const ProductReview = () => {
                     <input
                       id="reviews-radio-7"
                       type="radio"
-                      value=""
                       name="reviews-radio-4"
                       className="h-4 w-4 border-gray-300 bg-gray-100 text-primary-600 focus:ring-2 focus:ring-primary-500 dark:border-gray-600 dark:bg-gray-700 dark:ring-offset-gray-800 dark:focus:ring-primary-600"
                     />
@@ -810,15 +799,13 @@ const ProductReview = () => {
                       htmlFor="reviews-radio-7"
                       className="ms-2 text-sm font-medium text-gray-900 dark:text-gray-300"
                     >
-                      {" "}
-                      Yes: 1{" "}
+                      Yes: 1
                     </label>
                   </div>
                   <div className="flex items-center">
                     <input
                       id="reviews-radio-8"
                       type="radio"
-                      value=""
                       name="reviews-radio-4"
                       className="h-4 w-4 border-gray-300 bg-gray-100 text-primary-600 focus:ring-2 focus:ring-primary-500 dark:border-gray-600 dark:bg-gray-700 dark:ring-offset-gray-800 dark:focus:ring-primary-600"
                     />
@@ -826,7 +813,7 @@ const ProductReview = () => {
                       htmlFor="reviews-radio-8"
                       className="ms-2 text-sm font-medium text-gray-900 dark:text-gray-300"
                     >
-                      No: 0{" "}
+                      No: 0
                     </label>
                   </div>
                 </div>
@@ -945,7 +932,6 @@ const ProductReview = () => {
                     <input
                       id="reviews-radio-9"
                       type="radio"
-                      value=""
                       name="reviews-radio-5"
                       className="h-4 w-4 border-gray-300 bg-gray-100 text-primary-600 focus:ring-2 focus:ring-primary-500 dark:border-gray-600 dark:bg-gray-700 dark:ring-offset-gray-800 dark:focus:ring-primary-600"
                     />
@@ -953,15 +939,13 @@ const ProductReview = () => {
                       htmlFor="reviews-radio-9"
                       className="ms-2 text-sm font-medium text-gray-900 dark:text-gray-300"
                     >
-                      {" "}
-                      Yes: 1{" "}
+                      Yes: 1
                     </label>
                   </div>
                   <div className="flex items-center">
                     <input
                       id="reviews-radio-10"
                       type="radio"
-                      value=""
                       name="reviews-radio-5"
                       className="h-4 w-4 border-gray-300 bg-gray-100 text-primary-600 focus:ring-2 focus:ring-primary-500 dark:border-gray-600 dark:bg-gray-700 dark:ring-offset-gray-800 dark:focus:ring-primary-600"
                     />
@@ -969,7 +953,7 @@ const ProductReview = () => {
                       htmlFor="reviews-radio-10"
                       className="ms-2 text-sm font-medium text-gray-900 dark:text-gray-300"
                     >
-                      No: 0{" "}
+                      No: 0
                     </label>
                   </div>
                 </div>
@@ -1116,7 +1100,7 @@ const ProductReview = () => {
                     required
                   ></textarea>
                   <p className="ms-auto text-xs text-gray-500 dark:text-gray-400">
-                    Problems with the product or delivery?{" "}
+                    Problems with the product or delivery?
                     <a
                       href="#"
                       className="text-primary-600 hover:underline dark:text-primary-500"
@@ -1128,7 +1112,7 @@ const ProductReview = () => {
                 </div>
                 <div className="col-span-2">
                   <p className="mb-2 block text-sm font-medium text-gray-900 dark:text-white">
-                    Add real photos of the product to help other customers{" "}
+                    Add real photos of the product to help other customers
                     <span className="text-gray-500 dark:text-gray-400">
                       (Optional)
                     </span>
@@ -1155,7 +1139,7 @@ const ProductReview = () => {
                           />
                         </svg>
                         <p className="mb-2 text-sm text-gray-500 dark:text-gray-400">
-                          <span className="font-semibold">Click to upload</span>{" "}
+                          <span className="font-semibold">Click to upload</span>
                           or drag and drop
                         </p>
                         <p className="text-xs text-gray-500 dark:text-gray-400">
@@ -1175,14 +1159,13 @@ const ProductReview = () => {
                     <input
                       id="review-checkbox"
                       type="checkbox"
-                      value=""
                       className="h-4 w-4 rounded border-gray-300 bg-gray-100 text-primary-600 focus:ring-2 focus:ring-primary-500 dark:border-gray-600 dark:bg-gray-700 dark:ring-offset-gray-800 dark:focus:ring-primary-600"
                     />
                     <label
                       htmlFor="review-checkbox"
                       className="ms-2 text-sm font-medium text-gray-500 dark:text-gray-400"
                     >
-                      By publishing this review you agree with the{" "}
+                      By publishing this review you agree with the
                       <a
                         href="#"
                         className="text-primary-600 hover:underline dark:text-primary-500"
