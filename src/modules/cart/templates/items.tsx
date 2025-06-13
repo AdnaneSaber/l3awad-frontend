@@ -14,23 +14,29 @@ const ItemsTemplate = ({ cart }: ItemsTemplateProps) => {
   return (
     <div>
       <div className="pb-3 flex items-center">
-        <Heading className="text-[2rem] leading-[2.75rem]">Cart</Heading>
+        <Heading className="text-[2.5rem] leading-[2.75rem] font-bold">
+          Cart
+        </Heading>
       </div>
-      <Table>
-        <Table.Header className="border-t-0">
-          <Table.Row className="text-ui-fg-subtle txt-medium-plus">
-            <Table.HeaderCell className="!pl-0">Item</Table.HeaderCell>
-            <Table.HeaderCell></Table.HeaderCell>
-            <Table.HeaderCell>Quantity</Table.HeaderCell>
-            <Table.HeaderCell className="hidden small:table-cell">
+      <Table className="bg-white">
+        <Table.Header className="border-t-0 bg-white">
+          <Table.Row className="text-ui-fg-subtle txt-medium-plus bg-white">
+            <Table.HeaderCell className="!pl-0 text-black bg-white">
+              Item
+            </Table.HeaderCell>
+            <Table.HeaderCell className="bg-white text-black"></Table.HeaderCell>
+            <Table.HeaderCell className="bg-white text-black">
+              Quantity
+            </Table.HeaderCell>
+            <Table.HeaderCell className="hidden small:table-cell bg-white text-black">
               Price
             </Table.HeaderCell>
-            <Table.HeaderCell className="!pr-0 text-right">
+            <Table.HeaderCell className="!pr-0 text-right bg-white text-black">
               Total
             </Table.HeaderCell>
           </Table.Row>
         </Table.Header>
-        <Table.Body>
+        <Table.Body className="bg-white text-black">
           {items
             ? items
                 .sort((a, b) => {

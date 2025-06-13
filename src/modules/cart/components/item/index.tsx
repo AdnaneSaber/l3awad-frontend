@@ -45,8 +45,8 @@ const Item = ({ item, type = "full", currencyCode }: ItemProps) => {
   const maxQuantity = item.variant?.manage_inventory ? 10 : maxQtyFromInventory
 
   return (
-    <Table.Row className="w-full" data-testid="product-row">
-      <Table.Cell className="!pl-0 p-4 w-24">
+    <Table.Row className="w-full text-black bg-white" data-testid="product-row">
+      <Table.Cell className="!pl-0 p-4 w-24 text-black bg-white">
         <LocalizedClientLink
           href={`/products/${item.product_handle}`}
           className={clx("flex", {
@@ -62,7 +62,7 @@ const Item = ({ item, type = "full", currencyCode }: ItemProps) => {
         </LocalizedClientLink>
       </Table.Cell>
 
-      <Table.Cell className="text-left">
+      <Table.Cell className="text-left text-black bg-white">
         <Text
           className="txt-medium-plus text-ui-fg-base"
           data-testid="product-title"
@@ -73,8 +73,8 @@ const Item = ({ item, type = "full", currencyCode }: ItemProps) => {
       </Table.Cell>
 
       {type === "full" && (
-        <Table.Cell>
-          <div className="flex gap-2 items-center w-28">
+        <Table.Cell className="text-black bg-white">
+          <div className="flex gap-2 items-center w-28 text-black bg-white">
             <DeleteButton id={item.id} data-testid="product-delete-button" />
             <CartItemSelect
               value={item.quantity}
@@ -105,7 +105,7 @@ const Item = ({ item, type = "full", currencyCode }: ItemProps) => {
       )}
 
       {type === "full" && (
-        <Table.Cell className="hidden small:table-cell">
+        <Table.Cell className="hidden small:table-cell text-black bg-white">
           <LineItemUnitPrice
             item={item}
             style="tight"
@@ -114,7 +114,7 @@ const Item = ({ item, type = "full", currencyCode }: ItemProps) => {
         </Table.Cell>
       )}
 
-      <Table.Cell className="!pr-0">
+      <Table.Cell className="!pr-0 text-black bg-white">
         <span
           className={clx("!pr-0", {
             "flex flex-col items-end h-full justify-center": type === "preview",

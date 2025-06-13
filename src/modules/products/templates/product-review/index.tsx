@@ -2,8 +2,8 @@ import React from "react"
 
 const ProductReview = () => {
   return (
-    <div className="relative w-full pt-4 bg-white px-6  pb-8  shadow-xl ring-1 ring-gray-900/5 sm:max-w-4xl sm:rounded-lg sm:px-10 mt-5">
-      <section className="bg-white antialiased  ">
+    <section className="relative w-full pt-4 bg-white px-6  pb-8  shadow-xl ring-1 ring-gray-900/5 sm:max-w-4xl sm:px-10 mt-5">
+      <div className="antialiased">
         <div className="mx-auto max-w-screen-xl px-4 2xl:px-0">
           <div className=" items-center gap-2">
             <h3 className="text-base/7 font-semibold text-gray-900 mt-2">
@@ -970,7 +970,7 @@ const ProductReview = () => {
             </button>
           </div>
         </div>
-      </section>
+      </div>
 
       <div
         id="review-modal"
@@ -1196,7 +1196,7 @@ const ProductReview = () => {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   )
 }
 

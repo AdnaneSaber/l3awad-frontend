@@ -4,8 +4,14 @@ import React, { useState } from "react"
 import Description from "../product-description"
 import ProductFaq from "../product-faq"
 import ProductReview from "../product-review"
+import { HttpTypes } from "@medusajs/types"
 
-const ProductTabs = () => {
+type ProductTemplateProps = {
+  product: HttpTypes.StoreProduct
+  region: HttpTypes.StoreRegion
+}
+
+const ProductTabs: React.FC<ProductTemplateProps> = ({ product, region }) => {
   const [activeTab, setActiveTab] = useState<
     "description" | "faq" | "locking" | "reviews"
   >("description")
@@ -13,11 +19,11 @@ const ProductTabs = () => {
   return (
     <section className="py-4">
       <div className="mx-auto grid w-full">
-        <ul className="flex flex-wrap text-sm font-medium text-center text-gray-500 border-b border-gray-200 dark:border-gray-700 dark:text-gray-400">
+        <ul className="flex flex-wrap text-sm font-medium text-center text-gray-500 border-b border-gray-200">
           <li className="me-2">
             <button
               onClick={() => setActiveTab("description")}
-              className={`inline-block p-4 rounded-t-lg ${
+              className={`inline-block p-4  ${
                 activeTab === "description"
                   ? "text-black bg-gray-100 "
                   : "hover:text-gray-600 hover:bg-gray-50 "
@@ -29,7 +35,7 @@ const ProductTabs = () => {
           <li className="me-2">
             <button
               onClick={() => setActiveTab("faq")}
-              className={`inline-block p-4 rounded-t-lg ${
+              className={`inline-block p-4 ${
                 activeTab === "faq"
                   ? "text-black bg-gray-100 "
                   : "hover:text-gray-600 hover:bg-gray-50 "
@@ -42,7 +48,7 @@ const ProductTabs = () => {
           <li className="me-2">
             <button
               onClick={() => setActiveTab("reviews")}
-              className={`inline-block p-4 rounded-t-lg ${
+              className={`inline-block p-4 ${
                 activeTab === "reviews"
                   ? "text-black bg-gray-100 "
                   : "hover:text-gray-600 hover:bg-gray-50 "
@@ -54,7 +60,9 @@ const ProductTabs = () => {
         </ul>
 
         <div className="">
-          {activeTab === "description" && <Description />}
+          {activeTab === "description" && (
+            <Description product={product} region={region} />
+          )}
           {activeTab === "faq" && <ProductFaq />}
           {activeTab === "locking" && (
             <div className="text-gray-600">

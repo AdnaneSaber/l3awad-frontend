@@ -72,6 +72,10 @@ const nextConfig = {
         protocol: "https",
         hostname: "pagedone.io",
       },
+      {
+        protocol: "http",
+        hostname: "api.l3awad.ma",
+      },
     ],
   },
 }
