@@ -76,6 +76,11 @@ const nextConfig = {
         protocol: "http",
         hostname: "api.l3awad.ma",
       },
+      {
+        protocol: "https",
+        hostname: "firebasestorage.googleapis.com",
+        pathname: "/**",
+      },
     ],
   },
 }
