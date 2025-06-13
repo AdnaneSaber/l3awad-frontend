@@ -1,8 +1,17 @@
-import React from "react"
+import { HttpTypes } from "@medusajs/types"
+import React, { useEffect } from "react"
+type ProductInfoProps = {
+  product: HttpTypes.StoreProduct
+  region: HttpTypes.StoreRegion
+}
 
-const Description = () => {
+const Description = (props: ProductInfoProps) => {
+  const { product, region } = props
+  useEffect(() => {
+    console.log("Product Variants:", product.variants)
+  }, [product])
   return (
-    <article className="relative w-full pt-4 bg-white px-6  pb-8  shadow-xl ring-1 ring-gray-900/5 sm:max-w-4xl sm:rounded-lg sm:px-10 mt-5">
+    <article className="relative w-full pt-4 bg-white px-6  pb-8  shadow-xl ring-1 ring-gray-900/5 sm:max-w-4xl sm:px-10 mt-5">
       <div className="px-4 sm:px-0 ">
         <h3 className="text-base/7 font-semibold text-gray-900 ">
           Description of the product
@@ -15,49 +24,53 @@ const Description = () => {
               Product Description:
             </dt>
             <dd className="mt-1 text-sm/6 text-gray-700 sm:col-span-2 sm:mt-0">
-              Modern MDF 2-Drawer Nightstand with Hidden Compartment Bring
-              elegance and functionality together with this modern MDF
-              nightstand, designed to enhance any living space with its sleek
-              and minimalist style. Measuring 40x40 cm at the base and standing
-              50 cm tall, this nightstand offers a clean, contemporary aesthetic
-              while remaining warm and inviting.
+              {product.description}
             </dd>
           </div>
           <div className="px-4 py-6 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-0">
             <dt className="text-sm/6 font-medium text-gray-900">Materials:</dt>
             <dd className="mt-1 text-sm/6 text-gray-700 sm:col-span-2 sm:mt-0">
-              wood, MDF, metal
+              {product.material ? product.material : "-"}
             </dd>
           </div>
           <div className="px-4 py-6 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-0">
             <dt className="text-sm/6 font-medium text-gray-900">Dimensions:</dt>
             <dd className="mt-1 text-sm/6 text-gray-700 sm:col-span-2 sm:mt-0">
-              Width: 40 centimetres <br /> Height: 50 centimetres <br /> Depth:
-              40 centimetres
+              Width: {product.width} centimetres <br /> Height: {product.height}{" "}
+              centimetres <br /> Length:
+              {product.length} centimetres
             </dd>
           </div>
           <div className="px-4 py-6 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-0">
             <dt className="text-sm/6 font-medium text-gray-900">Colors:</dt>
             <dd className="mt-1 text-sm/6 text-gray-700 sm:col-span-2 sm:mt-0">
-              Black
-              <br /> White
-              <br /> Brown
+              {product.variants && product.variants.length > 0 ? (
+                <ul className="list-disc ml-5">
+                  {product.variants.map((variant, index) => (
+                    <li key={variant.id || index}>
+                      {variant.title ?? "Untitled variant"}
+                    </li>
+                  ))}
+                </ul>
+              ) : (
+                "-"
+              )}
             </dd>
           </div>
-          <div className="px-4 py-6 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-0">
+          {/* <div className="px-4 py-6 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-0">
             <dt className="text-sm/6 font-medium text-gray-900">
               Number of Drawers:
             </dt>
             <dd className="mt-1 text-sm/6 text-gray-700 sm:col-span-2 sm:mt-0">
               2
             </dd>
-          </div>
+          </div> */}
           <div className="px-4 py-6 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-0">
             <dt className="text-sm/6 font-medium text-gray-900">
               Total weight
             </dt>
             <dd className="mt-1 text-sm/6 text-gray-700 sm:col-span-2 sm:mt-0">
-              5,5 kg (Flap 60) / 7,5kg (Flap 90) / 10kg (Flap 120)
+              {product.weight} kg
             </dd>
           </div>
         </dl>

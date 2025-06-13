@@ -2,12 +2,17 @@ import React from "react"
 
 const ProductBlock = () => {
   return (
-    <section className="py-12">
+    <section className="py-8 place-items-center">
       <div className="container">
         <div className="mt-24">
           <div className="mx-auto flex w-fit flex-col items-center gap-8 md:gap-12">
-            <div className="mt-2 ring-offset-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 max-w-screen-lg">
+            <div className="mt-2 ring-offset-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2">
               <div className="grid grid-cols-1 items-center gap-10 md:grid-cols-2">
+                <img
+                  src="/main_prod/product (8).png"
+                  alt="Ready to use blocks"
+                  className="order-first max-h-[400px] w-full object-cover md:order-last"
+                />
                 <div>
                   <h2 className="mb-4 text-2xl font-semibold md:text-4xl">
                     Why Hidden Compartment Furniture?
@@ -111,11 +116,6 @@ const ProductBlock = () => {
                     </li>
                   </ul>
                 </div>
-                <img
-                  src="/main_prod/product (8).png"
-                  alt="Ready to use blocks"
-                  className="order-first max-h-[400px] w-full object-cover md:order-last"
-                />
               </div>
             </div>
           </div>

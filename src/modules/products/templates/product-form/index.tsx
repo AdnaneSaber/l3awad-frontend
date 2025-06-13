@@ -2,7 +2,7 @@ import React from "react"
 
 const ProductForm = () => {
   return (
-    <div className="relative flex w-full max-w-[24rem] flex-col rounded-lg bg-white border border-slate-200 shadow-sm">
+    <div className="relative flex sm:w-full lg:max-w-[24rem] flex-col rounded-lg bg-white border border-slate-200 shadow-sm">
       <div className="p-6">
         <div className="block overflow-visible">
           <div className="relative block w-full overflow-hidden !overflow-x-hidden !overflow-y-visible bg-transparent">
