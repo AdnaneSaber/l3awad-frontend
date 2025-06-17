@@ -1,3 +1,4 @@
+import { BRAND_NAME } from "@lib/brand-config"
 import React from "react"
 
 const Incentive = () => {
@@ -17,25 +18,26 @@ const Incentive = () => {
 
             <div className="lg:absolute lg:left-[40%] md:left-[30%] lg:w-[55%] lg:p-12 sm:p-6 p-4 flex flex-col justify-center bg-white">
               <h2 className="text-black md:text-5xl text-2xl font-bold mb-4">
-                Our Philosophy
+                Notre philosophie
               </h2>
               <p className="text-black text-md mb-6">
-                A young team of craftsmen has developed a new, innovative
-                furniture concept from their vision with manual skill and a lot
-                of motivation. The best materials and carpentry know-how are the
-                basis for our furniture, which should keep the most important
-                and valuable things in your household safe and secret.
+                Chez {BRAND_NAME}, nous croyons qu’un meuble peut être bien plus
+                qu’un simple objet de décoration. Il peut devenir un espace
+                personnel sécurisé, élégant et discret. Notre mission est de
+                réconcilier la sécurité avec le design, en proposant des meubles
+                intelligents dotés de systèmes de verrouillage RFID invisibles,
+                mais redoutablement efficaces.
               </p>
 
               <div className="mt-6">
                 <a
                   href="#_"
-                  className="relative inline-block px-4 py-2 font-medium group"
+                  className="relative inline-block px-4 py-2 font-medium group uppercase"
                 >
                   <span className="absolute inset-0 w-full h-full transition duration-200 ease-out transform translate-x-1 translate-y-1 bg-black group-hover:-translate-x-0 group-hover:-translate-y-0"></span>
                   <span className="absolute inset-0 w-full h-full bg-white border-2 border-black group-hover:bg-black"></span>
                   <span className="relative text-black group-hover:text-white">
-                    Read more
+                    En savoir plus
                   </span>
                 </a>
               </div>

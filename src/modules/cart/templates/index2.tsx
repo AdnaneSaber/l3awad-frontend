@@ -53,7 +53,7 @@
 //             <div className="md:pl-3 md:w-8/12 2xl:w-3/4 flex flex-col justify-center">
 //               <div className="flex items-center justify-between w-full">
 //                 <p className="text-base font-black leading-none text-gray-800">
-//                   Balzblock T50 Woodwork - Bedside table with safe/gun cabinet
+//                   {BRAND_NAME} T50 Woodwork - Bedside table with safe/gun cabinet
 //                 </p>
 //                 <BsTrash className="text-gray-600 hover:text-red-500 cursor-pointer" />
 //               </div>

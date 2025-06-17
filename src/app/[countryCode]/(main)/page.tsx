@@ -12,9 +12,13 @@ import Philosophie from "@modules/home/components/philosophie"
 import Incentive from "@modules/home/components/incentive"
 import WhyUs from "@modules/home/components/why-us"
 import HomeBlock from "../../../modules/home/components/home-block/index"
+import About from "@modules/home/components/about"
+import AboutHome from "@modules/home/components/main-about"
+import React from "react"
+import { BRAND_NAME } from "@lib/brand-config"
 
 export const metadata: Metadata = {
-  title: "Medusa Next.js Starter Template",
+  title: `${BRAND_NAME} | Home`,
   description:
     "A performant frontend ecommerce starter template with Next.js 15 and Medusa.",
 }
@@ -37,9 +41,10 @@ export default async function Home(props: {
   }
 
   return (
-    <>
+    <React.Fragment>
       <Hero />
-      {/* <OurProducts title="Latest Product" /> */}
+      <FeaturedProducts collections={collections} region={region} />
+      <AboutHome />
       <Services />
       <ListAbout />
       <Swiper2 />
@@ -48,7 +53,6 @@ export default async function Home(props: {
       <Features />
       <HomeBlock />
       <Philosophie />
-      <FeaturedProducts collections={collections} region={region} />
-    </>
+    </React.Fragment>
   )
 }

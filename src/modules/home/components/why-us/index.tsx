@@ -4,34 +4,43 @@ const WhyUs = () => {
   return (
     <section className="text-gray-700 body-font">
       <div className="flex justify-center mt-10 text-4xl font-bold text-black">
-        Why Us?
+        Pourquoi nous choisir ?
       </div>
       <div className="container px-5 py-12 mx-auto">
         <div className="flex flex-wrap text-center justify-center">
           <div className="p-4 md:w-1/4 sm:w-1/2">
-            <div className="px-4 py-6 transform transition duration-500 hover:scale-110">
+            <div
+              className="px-4 py-6 transform transition duration-500 hover:scale-110"
+              title="Verrouillage discret sans serrure visible."
+            >
               <div className="flex justify-center">
                 <img src="/why us/wood.png" className="w-32 mb-3" />
               </div>
               <h2 className="title-font font-regular text-2xl text-gray-900">
-                Good Quality Of Wood
+                Meilleure qualité du bois
               </h2>
             </div>
           </div>
 
           <div className="p-4 md:w-1/4 sm:w-1/2">
-            <div className="px-4 py-6 transform transition duration-500 hover:scale-110">
+            <div
+              className="px-4 py-6 transform transition duration-500 hover:scale-110"
+              title="Des meubles qui s’intègrent parfaitement à votre intérieur."
+            >
               <div className="flex justify-center">
                 <img src="/why us/rfid.png" className="w-32 mb-3" />
               </div>
               <h2 className="title-font font-regular text-2xl text-gray-900">
-                Rfid Technology
+                Sécurité RFID
               </h2>
             </div>
           </div>
 
           <div className="p-4 md:w-1/4 sm:w-1/2">
-            <div className="px-4 py-6 transform transition duration-500 hover:scale-110">
+            <div
+              className="px-4 py-6 transform transition duration-500 hover:scale-110"
+              title="Conçu et fabriqué au Maroc par des artisans passionnés."
+            >
               <div className="flex justify-center">
                 <img
                   src="/why us/fast-delivery (1).png"
@@ -39,18 +48,21 @@ const WhyUs = () => {
                 />
               </div>
               <h2 className="title-font font-regular text-2xl text-gray-900">
-                Free and Fast Delivery
+                Livraison rapide
               </h2>
             </div>
           </div>
 
           <div className="p-4 md:w-1/4 sm:w-1/2">
-            <div className="px-4 py-6 transform transition duration-500 hover:scale-110">
+            <div
+              className="px-4 py-6 transform transition duration-500 hover:scale-110"
+              title="Partout au Maroc sous 72h."
+            >
               <div className="flex justify-center">
                 <img src="/why us/cash-on-delivery.png" className="w-32 mb-3" />
               </div>
               <h2 className="title-font font-regular text-2xl text-gray-900">
-                Cash On Delivery
+                Paiement à la livraison
               </h2>
             </div>
           </div>

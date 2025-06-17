@@ -1,4 +1,5 @@
 import React from "react"
+import { BRAND_NAME } from "../../../../lib/brand-config"
 
 const ProductBlock = () => {
   return (
@@ -15,11 +16,12 @@ const ProductBlock = () => {
                 />
                 <div>
                   <h2 className="mb-4 text-2xl font-semibold md:text-4xl">
-                    Why Hidden Compartment Furniture?
+                    Pourquoi choisir un meuble à compartiment secret ?
                   </h2>
                   <p className="text-xl text-zinc-600">
-                    Phantom delivers sleek, secure furniture with hidden
-                    storage—keeping your valuables safe.
+                    {BRAND_NAME} propose des meubles élégants et sécurisés,
+                    dotés de rangements cachés pour mettre vos objets de valeur
+                    à l’abri.
                   </p>
                   <ul className="mt-8 grid grid-cols-1 gap-2 lg:grid-cols-2">
                     <li className="flex items-center gap-2">
@@ -38,25 +40,7 @@ const ProductBlock = () => {
                         <circle cx="12" cy="12" r="10"></circle>
                         <path d="m9 12 2 2 4-4"></path>
                       </svg>
-                      <span className="font-medium">Hidden Storage</span>
-                    </li>
-                    <li className="flex items-center gap-2">
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="24"
-                        height="24"
-                        viewBox="0 0 24 24"
-                        fill="none"
-                        stroke="currentColor"
-                        strokeWidth="2"
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        className="lucide lucide-circle-check w-4"
-                      >
-                        <circle cx="12" cy="12" r="10"></circle>
-                        <path d="m9 12 2 2 4-4"></path>
-                      </svg>
-                      <span className="font-medium">Theft Protection</span>
+                      <span className="font-medium"> Rangement dissimulé</span>
                     </li>
                     <li className="flex items-center gap-2">
                       <svg
@@ -75,7 +59,8 @@ const ProductBlock = () => {
                         <path d="m9 12 2 2 4-4"></path>
                       </svg>
                       <span className="font-medium">
-                        Valuables Stay Concealed
+                        {" "}
+                        Objets précieux bien cachés
                       </span>
                     </li>
                     <li className="flex items-center gap-2">
@@ -94,7 +79,7 @@ const ProductBlock = () => {
                         <circle cx="12" cy="12" r="10"></circle>
                         <path d="m9 12 2 2 4-4"></path>
                       </svg>
-                      <span className="font-medium">Price & Value</span>
+                      <span className="font-medium">Meuble sur mesure</span>
                     </li>
                     <li className="flex items-center gap-2">
                       <svg
@@ -112,7 +97,29 @@ const ProductBlock = () => {
                         <circle cx="12" cy="12" r="10"></circle>
                         <path d="m9 12 2 2 4-4"></path>
                       </svg>
-                      <span className="font-medium">Custom-made</span>
+                      <span className="font-medium">
+                        Protection contre le vol
+                      </span>
+                    </li>
+                    <li className="flex items-center gap-2">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        strokeWidth="2"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        className="lucide lucide-circle-check w-4"
+                      >
+                        <circle cx="12" cy="12" r="10"></circle>
+                        <path d="m9 12 2 2 4-4"></path>
+                      </svg>
+                      <span className="font-medium">
+                        Excellent rapport qualité/prix
+                      </span>
                     </li>
                   </ul>
                 </div>

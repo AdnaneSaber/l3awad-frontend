@@ -13,8 +13,8 @@ const Footer = () => {
                 <span>{BRAND_NAME}</span>
               </h2>
               <p className="mt-2 text-sm text-gray-600">
-                Lorem ipsum dolor sit amet consectetur. Imperdiet aliquet
-                faucibus malesuada vitae.
+                Mobilier intelligent pour dissimuler vos objets de valeur en
+                toute sécurité.
               </p>
               <p className="mt-2 text-sm text-gray-600">
                 <span className="font-semibold">(219) 555-0114</span>
@@ -37,33 +37,33 @@ const Footer = () => {
             </div>
 
             <div>
-              <h3 className="font-semibold mb-2">My Account</h3>
+              <h3 className="font-semibold mb-2">Mon Compte</h3>
               <ul className="text-sm space-y-2">
                 <li>
                   <a href="#" className="hover:text-blue-600">
-                    My Account
+                    Mon Compte
                   </a>
                 </li>
                 <li>
                   <a href="#" className="hover:text-blue-600">
-                    Order History
+                    Historique des commandes
                   </a>
                 </li>
                 <li>
                   <a href="#" className="hover:text-blue-600">
-                    Shopping Cart
+                    Panier
                   </a>
                 </li>
                 <li>
                   <a href="#" className="hover:text-blue-600">
-                    Wishlist
+                    Liste de souhaits
                   </a>
                 </li>
               </ul>
             </div>
 
             <div>
-              <h3 className="font-semibold mb-2">Helps</h3>
+              <h3 className="font-semibold mb-2">Aide</h3>
               <ul className="text-sm space-y-2">
                 <li>
                   <a href="#" className="hover:text-blue-600">
@@ -77,33 +77,33 @@ const Footer = () => {
                 </li>
                 <li>
                   <a href="#" className="hover:text-blue-600">
-                    Terms & Condition
+                    Conditions générales
                   </a>
                 </li>
                 <li>
                   <a href="#" className="hover:text-blue-600">
-                    Privacy Policy
+                    Politique de confidentialité
                   </a>
                 </li>
               </ul>
             </div>
 
             <div>
-              <h3 className="font-semibold mb-2">Categories</h3>
+              <h3 className="font-semibold mb-2">Catégories</h3>
               <ul className="text-sm space-y-2">
                 <li>
                   <a href="#" className="hover:text-blue-600">
-                    Printers
+                    Imprimantes
                   </a>
                 </li>
                 <li>
                   <a href="#" className="hover:text-blue-600">
-                    Cartridge
+                    Cartouches
                   </a>
                 </li>
                 <li>
                   <a href="#" className="hover:text-blue-600">
-                    Ink
+                    Encre
                   </a>
                 </li>
               </ul>
@@ -154,7 +154,7 @@ const Footer = () => {
 
           <div className="text-center text-sm text-gray-500 mt-6 border-t pt-4">
             <Text className="txt-compact-small">
-              © {new Date().getFullYear()} {BRAND_NAME}. All rights reserved.
+              © {new Date().getFullYear()} {BRAND_NAME}. Tous droits réservés.
             </Text>
           </div>
         </div>

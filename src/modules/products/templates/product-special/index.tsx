@@ -11,13 +11,13 @@ const ProductSpecial = () => {
       />
       <div className="flex flex-col lg:items-start lg:text-left">
         <h1 className="my-6 text-pretty text-3xl font-bold lg:text-4xl">
-          Your Special Order
+          Votre commande personnalisée
         </h1>
         <p className="mb-8 max-w-xl text-zinc-600 lg:text-lg ">
-          you wish your {BRAND_NAME}® Furniture in a special colour, with a
-          special wood and with specific dimensions? No problem, just make a
-          non-binding inquiry. Together we will discuss your ideas and make you
-          an individual offer.
+          Vous souhaitez un meuble {BRAND_NAME}® dans une couleur spécifique, un
+          type de bois particulier ou des dimensions précises ? Aucun souci, il
+          vous suffit de faire une demande sans engagement. Nous discuterons
+          ensemble de vos idées afin de vous proposer une offre sur mesure.
         </p>
         <div className="flex flex-col sm:flex-row sm:mb-2">
           <div>
@@ -39,7 +39,7 @@ const ProductSpecial = () => {
                   <path d="m9 11 3 3L22 4"></path>
                 </svg>
                 <p className="text-zinc-600 text-xs md:text-sm lg:text-lg">
-                  color as desired
+                  Couleur au choix
                 </p>
               </li>
               <li className="flex items-center gap-3">
@@ -59,7 +59,7 @@ const ProductSpecial = () => {
                   <path d="m9 11 3 3L22 4"></path>
                 </svg>
                 <p className="text-zinc-600 text-xs md:text-sm lg:text-lg">
-                  Various types of wood
+                  Divers types de bois
                 </p>
               </li>
               <li className="flex items-center gap-3">
@@ -79,7 +79,7 @@ const ProductSpecial = () => {
                   <path d="m9 11 3 3L22 4"></path>
                 </svg>
                 <p className="text-zinc-600 text-xs md:text-sm lg:text-lg">
-                  Individual customization
+                  Personnalisation individuelle
                 </p>
               </li>
             </ul>
@@ -92,7 +92,7 @@ const ProductSpecial = () => {
               <span className="absolute inset-0 translate-x-1.5 translate-y-1.5 bg-gray-400 transition-transform group-hover:translate-x-0 group-hover:translate-y-0"></span>
 
               <span className="relative inline-block border-2 border-current px-8 py-3 text-sm font-bold tracking-widest text-black uppercase">
-                Inquire now
+                → DEMANDER UNE OFFRE
               </span>
             </button>
           </div>

@@ -6,9 +6,9 @@ import Image from "next/image"
 const tabs = [
   {
     id: "tabs-with-card-1",
-    title: "Advanced tools",
-    description:
-      "Use Preline thoroughly thought and automated libraries to manage your businesses.",
+    title: "Des cambriolages rarement élucidés",
+    description: `94 % des cambriolages restent non résolus chaque année dans le monde.
+Les méthodes de sécurité classiques ne suffisent plus à dissuader les voleurs.`,
     icon: (
       <svg
         className="shrink-0 mt-2 size-6 md:size-7 text-gray-800 dark:text-neutral-200"
@@ -28,9 +28,9 @@ const tabs = [
   },
   {
     id: "tabs-with-card-2",
-    title: "Smart dashboards",
-    description:
-      "Quickly Preline sample components, copy-paste codes, and start right off.",
+    title: " Un risque bien réel, même au Maroc",
+    description: `78 % des personnes sont victimes d’un cambriolage au moins une fois dans leur vie.
+Nos foyers ne sont pas à l’abri — même dans les quartiers réputés calmes.`,
     icon: (
       <svg
         className="shrink-0 mt-2 size-6 md:size-7 text-gray-800 dark:text-neutral-200"
@@ -47,9 +47,9 @@ const tabs = [
   },
   {
     id: "tabs-with-card-3",
-    title: "Powerful features",
-    description:
-      "Reduce time and effort on building modern look design with Preline only.",
+    title: "Des pertes souvent importantes",
+    description: `Dans 44 % des cas, les objets volés dépassent une valeur de 10 000 MAD.
+Documents, bijoux, argent liquide ou souvenirs familiaux... souvent irremplaçables.`,
     icon: (
       <svg
         className="shrink-0 mt-2 size-6 md:size-7 text-gray-800 dark:text-neutral-200"
@@ -75,7 +75,7 @@ export default function Philosophie() {
         <div className="relative z-10 lg:grid lg:grid-cols-12 lg:gap-16 lg:items-center">
           <div className="mb-10 lg:mb-0 lg:col-span-6 lg:col-start-8 lg:order-2">
             <h2 className="text-2xl font-bold sm:text-3xl text-black">
-              Fully customizable rules to match your unique needs
+              Pourquoi la sécurité discrète est essentielle ?
             </h2>
 
             <nav
@@ -91,7 +91,7 @@ export default function Philosophie() {
                   aria-selected={activeTab === tab.id}
                   aria-controls={tab.id}
                   onClick={() => setActiveTab(tab.id)}
-                  className={`text-start hover:bg-gray-200 focus:outline-hidden focus:bg-gray-200 p-4 md:p-5 rounded-xl dark:hover:bg-neutral-700 dark:focus:bg-neutral-700 ${
+                  className={`text-start hover:bg-gray-200 focus:outline-hidden focus:bg-gray-200 p-4 md:p-5  dark:hover:bg-neutral-700 dark:focus:bg-neutral-700 ${
                     activeTab === tab.id
                       ? "bg-white shadow-md dark:bg-neutral-700"
                       : ""
@@ -126,7 +126,7 @@ export default function Philosophie() {
                     className="transition-opacity duration-500 ease-in-out opacity-100 animate-fade-in"
                   >
                     <Image
-                      className="shadow-xl rounded-xl dark:shadow-gray-900/20"
+                      className="shadow-xl  dark:shadow-gray-900/20"
                       src={tab.image}
                       alt="Features Image"
                       width={560}
@@ -171,7 +171,7 @@ export default function Philosophie() {
 
         {/* Background Color */}
         <div className="absolute inset-0 grid grid-cols-12 size-full">
-          <div className="col-span-full lg:col-span-7 lg:col-start-6 bg-gray-100 w-full h-5/6 rounded-xl sm:h-3/4 lg:h-full dark:bg-neutral-800"></div>
+          <div className="col-span-full lg:col-span-7 lg:col-start-6 bg-gray-100 w-full h-5/6  sm:h-3/4 lg:h-full dark:bg-neutral-800"></div>
         </div>
       </div>
     </div>
