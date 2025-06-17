@@ -5,17 +5,17 @@ const HomeBlock = () => {
   return (
     <section className="mt-11">
       <h2 className="text-center text-4xl font-bold leading-8 text-black">
-        Locking Mechanisms
+        Mécanismes de Verrouillage
       </h2>
       <div className="flex flex-wrap justify-center mt-10">
         <div className="p-4 max-w-sm">
           <div className="flex w-full h-full bg-[#f2f2f2] text-black p-8 flex-col">
             <UnOrderedList3
-              title="Magnetic Lock"
+              title="Verrou magnétique"
               items={[
-                "Installed by default in all products",
-                "Purely mechanical lock",
-                "Can be easily opened with the accompanying magnet",
+                "Installé par défaut dans tous les produits",
+                "Verrou purement mécanique",
+                "Peut être facilement ouvert avec le magnet fourni",
               ]}
             />
           </div>
@@ -23,13 +23,13 @@ const HomeBlock = () => {
         <div className="p-4 max-w-sm">
           <div className="flex w-full h-full bg-[#f2f2f2] text-black p-8 flex-col">
             <UnOrderedList3
-              title="Electronic lock"
+              title="Verrou électronique"
               items={[
-                "Replaces the standard locking mechanism",
-                "Identification via transponder card",
-                "RFID 125kHz technology",
-                "MIFARE RFID 13,56MHz technology",
-                "No power connection required, locks are battery operated",
+                "Remplace le mécanisme de verrouillage standard",
+                "Identification via carte de transpondeur",
+                "Technologie RFID 125kHz",
+                "Technologie RFID MIFARE 13,56MHz",
+                "Aucune connexion électrique requise, les verrous fonctionnent sur batterie",
               ]}
             />
           </div>
@@ -37,12 +37,12 @@ const HomeBlock = () => {
         <div className="p-4 max-w-sm">
           <div className="flex w-full h-full bg-[#f2f2f2] text-black p-8 flex-col">
             <UnOrderedList3
-              title="Bluetooth lock"
+              title="Verrou Bluetooth"
               items={[
-                "replaces the standard locking mechanism",
+                "Remplace le mécanisme de verrouillage standard",
                 "Identification via smartphone (Bluetooth)",
-                "works without a mobile network and internet connection",
-                "No power connection required, locks are battery operated",
+                "Fonctionne sans réseau mobile ni connexion Internet",
+                "Aucune connexion électrique requise, les verrous fonctionnent sur batterie",
               ]}
             />
           </div>

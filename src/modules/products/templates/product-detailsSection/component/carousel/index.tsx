@@ -1,28 +1,24 @@
 "use client"
-import { ReactNode, useState, useEffect } from "react"
+import Image from "next/image"
+import { useState, useEffect } from "react"
 
 interface CarouselProps {
-  children: ReactNode[]
+  images: string[]
   autoSlide?: boolean
   autoSlideInterval?: number
 }
-const thumbnails: string[] = [
-  "/product 2/second-product1.png",
-  "/product 2/second-product2.png",
-  "/product 2/second-product3.png",
-  "/product 2/second-product4.png",
-]
+
 export function Carousel({
-  children: slides,
+  images,
   autoSlide = false,
   autoSlideInterval = 3000,
 }: CarouselProps) {
   const [curr, setCurr] = useState(0)
 
   const prev = () =>
-    setCurr((curr) => (curr === 0 ? slides.length - 1 : curr - 1))
+    setCurr((curr) => (curr === 0 ? images.length - 1 : curr - 1))
   const next = () =>
-    setCurr((curr) => (curr === slides.length - 1 ? 0 : curr + 1))
+    setCurr((curr) => (curr === images.length - 1 ? 0 : curr + 1))
 
   useEffect(() => {
     if (!autoSlide) return
@@ -32,54 +28,55 @@ export function Carousel({
 
   return (
     <div className="flex flex-col">
-      <div className="overflow-hidden relative max-h-96 md:max-h-full ">
+      <div className="overflow-hidden relative md:max-h-full">
         <div
           className="flex transition-transform ease-out duration-500"
           style={{ transform: `translateX(-${curr * 100}%)` }}
         >
-          {slides}
+          {images.map((src, index) => (
+            // eslint-disable-next-line @next/next/no-img-element
+            <img key={index} src={src} alt={`Slide ${index}`} />
+          ))}
         </div>
         <div className="absolute inset-0 flex items-center justify-between p-4">
           <button
             onClick={prev}
             className="bg-white rounded-full p-3 md:hidden"
           >
-            <img
-              className="h-[10px] w-[10px]"
+            <Image
               src="/icons/icon-previous.svg"
-              alt=""
+              alt="icon previous"
+              width={10}
+              height={10}
             />
           </button>
           <button
             onClick={next}
             className="bg-white rounded-full p-3 md:hidden"
           >
-            <img
-              className="h-[10px] w-[10px]"
+            <Image
               src="/icons/icon-next.svg"
-              alt=""
+              alt="icon next"
+              width={10}
+              height={10}
             />
           </button>
         </div>
       </div>
-      <div className="hidden md:flex w-full gap-2 mt-5 h-8">
-        {thumbnails.map((t, i) => (
+      <div className="hidden md:flex w-full gap-2 mt-5 h-full overflow-x-auto overflow-y-hidden scrollbar-thin scrollbar-thumb-gray-400">
+        {images.map((src, i) => (
           <div
             key={i}
             onClick={() => setCurr(i)}
-            className="hover:cursor-pointer focus:opacity-20 "
+            className="hover:cursor-pointer flex-shrink-0"
           >
-            <div
-              className={`
-                  ${curr === i ? "border-2 border-orange" : ""}`}
-            >
-              <img
-                className={` 
-                    ${curr === i ? "opacity-40" : ""}`}
-                src={t}
-                alt=""
-                width={75}
-                height={75}
+            <div className={`${curr === i ? "border-2 border-orange" : ""}`}>
+              <Image
+                className={`max-h-[80px] ${curr === i ? "opacity-40" : ""}`}
+                src={src}
+                alt={`Thumbnail ${i}`}
+                width={80}
+                height={80}
               />
             </div>
           </div>

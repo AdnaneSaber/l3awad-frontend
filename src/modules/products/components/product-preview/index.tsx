@@ -28,7 +28,7 @@ export default async function ProductPreview({
   const { cheapestPrice } = getProductPrice({
     product,
   })
-
+  const fallbackImage = "/main_prod/main-prod (1).png"
   return (
     <LocalizedClientLink
       href={`/products/${product.handle}`}
@@ -36,7 +36,7 @@ export default async function ProductPreview({
     >
       <div className="relative h-[350px] sm:h-[450px]">
         <Image
-          src={product.images?.[0]?.url}
+          src={product.images?.[0]?.url || fallbackImage}
           alt={product.title}
           className="absolute inset-0 h-full w-full object-cover opacity-100 group-hover:opacity-0 transition-opacity duration-500 ease-in-out"
           width={350}
@@ -44,7 +44,7 @@ export default async function ProductPreview({
         />
 
         <Image
-          src={product.images?.[1]?.url}
+          src={product.images?.[1]?.url || fallbackImage}
           alt={product.title}
           className="absolute inset-0 h-full w-full object-cover opacity-0 group-hover:opacity-100 transition-opacity duration-500 ease-in-out"
           width={350}
@@ -56,7 +56,6 @@ export default async function ProductPreview({
         <h3 className="text-sm text-gray-700 group-hover:underline group-hover:underline-offset-4">
           {product.title}
         </h3>
-
         <h4 className="mt-1.5 tracking-wide text-gray-900">
           {cheapestPrice && <PreviewPrice price={cheapestPrice} />}
         </h4>

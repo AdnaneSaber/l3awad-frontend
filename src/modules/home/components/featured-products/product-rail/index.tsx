@@ -1,10 +1,11 @@
 import { listProducts } from "@lib/data/products"
 import { HttpTypes } from "@medusajs/types"
 import { Text } from "@medusajs/ui"
-
 import InteractiveLink from "@modules/common/components/interactive-link"
 import ProductPreview from "@modules/products/components/product-preview"
-
+type CustomStoreProductParams = HttpTypes.StoreProductParams & {
+  "collection_id[]": string[]
+}
 export default async function ProductRail({
   collection,
   region,
@@ -17,9 +18,9 @@ export default async function ProductRail({
   } = await listProducts({
     regionId: region.id,
     queryParams: {
-      collection_id: collection.id,
+      "collection_id[]": [collection.id],
       fields: "*variants.calculated_price",
-    },
+    } as CustomStoreProductParams,
   })
 
   if (!pricedProducts) {
@@ -29,7 +30,9 @@ export default async function ProductRail({
   return (
     <div className="content-container py-12 small:py-24">
       <div className="flex justify-between mb-8">
-        <Text className="txt-xlarge">{collection.title}</Text>
+        <Text className="text-3xl font-bold tracking-tight text-black sm:text-4xl">
+          {collection.title}
+        </Text>
         <InteractiveLink href={`/collections/${collection.handle}`}>
           View all
         </InteractiveLink>

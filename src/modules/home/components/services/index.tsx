@@ -1,121 +1,103 @@
+import { BRAND_NAME } from "@lib/brand-config"
 import React from "react"
 
 const Services = () => {
   return (
-    <section className="">
-      <div className="container max-w-xl p-6 mx-auto space-y-12 lg:px-8 lg:max-w-7xl">
-        <h2 className="text-3xl font-bold tracking-tight text-black sm:text-4xl">
-          What we offer
-        </h2>
-        <div className="grid lg:gap-8 lg:grid-cols-2 lg:items-center">
-          <div aria-hidden="true" className="mt-10 lg:mt-0">
-            <img
-              width="734"
-              height="458"
-              alt="Services illustration"
-              src="/home/old-man.webp"
-              className="mx-auto shadow-lg dark-bg-gray-500"
-              style={{ color: "transparent" }}
-            />
+    <section className="bg-white dark:bg-gray-900">
+      <div className="container px-6 py-10 mx-auto">
+        <h1 className="text-3xl font-bold tracking-tight text-black sm:text-4xl">
+          Plus de sécurité ? {BRAND_NAME}®.
+        </h1>
+
+        <iframe
+          className="min-w-full mt-12 h-64 md:h-[450px]  overflow-hidden"
+          src="https://vimeo.com/showcase/7060635/video/525707984/embed"
+          frameBorder="0"
+          allow="autoplay; fullscreen"
+          allowFullScreen
+        ></iframe>
+
+        <div className="grid grid-cols-1 gap-8 mt-8 xl:mt-12 xl:gap-12 md:grid-cols-2">
+          <div className="p-6 border  border-r-gray-200 dark:border-gray-700">
+            <div className="md:flex md:items-start md:-mx-4">
+              <span className="inline-block p-2 text-black bg-white  md:mx-4 text-2xl">
+                🛡️
+              </span>
+
+              <div className="mt-4 md:mx-4 md:mt-0">
+                <h1 className="text-xl font-medium text-black capitalize ">
+                  Sécurité Invisible & Personnalisée
+                </h1>
+
+                <p className="mt-3 text-gray-700 ">
+                  Vous seul(e) connaissez le système de verrouillage intégré à
+                  votre meuble {BRAND_NAME}®. Grâce à notre technologie RFID
+                  dissimulée, vos objets précieux sont protégés des regards
+                  indiscrets et des vols.
+                </p>
+              </div>
+            </div>
           </div>
-          <div>
-            <div className="mt-4 space-y-12">
-              <div className="flex">
-                <div className="flex-shrink-0">
-                  <div className="flex items-center justify-center w-12 h-12 rounded-md">
-                    <img
-                      width="242"
-                      height="300"
-                      src="https://balzwerk.de/wp-content/uploads/2022/03/Group-33427.svg"
-                      className="attachment-medium size-medium"
-                      alt=""
-                    />
-                  </div>
-                </div>
-                <div className="ml-4">
-                  <h4 className="text-lg font-medium leadi ">
-                    Unique & protected security concept
-                  </h4>
-                  <p className="mt-2 ">
-                    Only you know the locking mechanism of yours L3AWAD®product
-                    and can thus protect all your most valuable items in the
-                    household from prying eyes and theft.
-                  </p>
-                </div>
+
+          <div className="p-6 border  border-r-gray-200 dark:border-gray-700">
+            <div className="md:flex md:items-start md:-mx-4">
+              <span className="inline-block p-2 text-black bg-white  md:mx-4 text-2xl">
+                🪑
+              </span>
+
+              <div className="mt-4 md:mx-4 md:mt-0">
+                <h1 className="text-xl font-medium text-black capitalize ">
+                  Mobilier avec Compartiment Secret
+                </h1>
+
+                <p className="mt-3 text-gray-700 ">
+                  Derrière chaque design élégant se cache une fonction secrète.
+                  Nos meubles intègrent des compartiments invisibles sécurisés
+                  par RFID, pensés pour la discrétion et la sécurité sans
+                  compromis sur le style.
+                </p>
               </div>
-              <div className="flex">
-                <div className="flex-shrink-0">
-                  <div className="flex items-center justify-center w-12 h-12 rounded-md">
-                    <img
-                      width="275"
-                      height="300"
-                      src="https://balzwerk.de/wp-content/uploads/2022/03/Group-33428.svg"
-                      className="attachment-medium size-medium"
-                      alt=""
-                    />
-                  </div>
-                </div>
-                <div className="ml-4">
-                  <h4 className="text-lg font-medium leadi ">
-                    Regionality & Sustainability
-                  </h4>
-                  <p className="mt-2 ">
-                    You will only receive products that are personally produced,
-                    tested and assembled by us. Quality and functionality, as
-                    well as the easy handling of our products are our top
-                    priority. Made in Morrocco.
-                  </p>
-                </div>
+            </div>
+          </div>
+
+          <div className="p-6 border  border-r-gray-200 dark:border-gray-700">
+            <div className="md:flex md:items-start md:-mx-4">
+              <span className="inline-block p-2 text-black bg-white  md:mx-4 text-2xl">
+                🌿
+              </span>
+
+              <div className="mt-4 md:mx-4 md:mt-0">
+                <h1 className="text-xl font-medium text-black capitalize ">
+                  Fabrication Locale & Durable
+                </h1>
+
+                <p className="mt-3 text-gray-700 ">
+                  Tous nos produits sont conçus, testés et assemblés au Maroc,
+                  en privilégiant des matériaux durables. Nous soutenons
+                  l’artisanat local tout en respectant l’environnement et la
+                  qualité.
+                </p>
               </div>
-              <div className="flex">
-                <div className="flex-shrink-0">
-                  <div className="flex items-center justify-center w-12 h-12 rounded-md">
-                    <img
-                      width="283"
-                      height="300"
-                      src="https://balzwerk.de/wp-content/uploads/2022/03/Group-33426.svg"
-                      className="attachment-medium size-medium"
-                      alt=""
-                    />
-                  </div>
-                </div>
-                <div className="ml-4">
-                  <h4 className="text-lg font-medium leadi ">
-                    Furniture with a secret compartment
-                  </h4>
-                  <p className="mt-2 ">
-                    With our products, the function is in the foreground, we
-                    develop and produce unique locking systems for furniture
-                    with secret compartments in connection with our security
-                    system, which consists of several points.
-                  </p>
-                </div>
-              </div>
-              <div className="flex">
-                <div className="flex-shrink-0">
-                  <div className="flex items-center justify-center w-12 h-12 rounded-md">
-                    <img
-                      width="300"
-                      height="300"
-                      src="https://balzwerk.de/wp-content/uploads/2022/03/Group-33429.svg"
-                      className="attachment-medium size-medium"
-                      alt=""
-                    />
-                  </div>
-                </div>
-                <div className="ml-4">
-                  <h4 className="text-lg font-medium leadi ">
-                    Design a la carte
-                  </h4>
-                  <p className="mt-2 ">
-                    Design with individual freedom. Do you have special
-                    requirements or dimensions for your special design shelf
-                    with a secret compartment? We would be happy to develop
-                    individual security furniture for you according to your
-                    personal requirements. We look forward to every new
-                    individual solution perfectly tailored to your needs.
-                  </p>
-                </div>
+            </div>
+          </div>
+
+          <div className="p-6 border  border-r-gray-200 dark:border-gray-700">
+            <div className="md:flex md:items-start md:-mx-4">
+              <span className="inline-block p-2 text-black bg-white  md:mx-4 text-2xl">
+                ✏️
+              </span>
+
+              <div className="mt-4 md:mx-4 md:mt-0">
+                <h1 className="text-xl font-medium text-black capitalize ">
+                  Design Sur-Mesure
+                </h1>
+
+                <p className="mt-3 text-gray-700 ">
+                  Besoin d’un meuble unique, à vos dimensions ou avec des
+                  exigences spécifiques ? Nous concevons pour vous un meuble
+                  sécurisé et élégant, parfaitement adapté à votre usage
+                  personnel.
+                </p>
               </div>
             </div>
           </div>
