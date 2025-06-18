@@ -22,7 +22,6 @@
     "@radix-ui/react-accordion": "^1.2.1",
     "@stripe/react-stripe-js": "^1.7.2",
     "@stripe/stripe-js": "^1.29.0",
-    "aos": "^2.3.4",
     "awilix": "^8.0.0",
     "dotenv": "^16.5.0",
     "lodash": "^4.17.21",

@@ -1,7 +1,11 @@
 @import "tailwindcss/base";
 @import "tailwindcss/components";
 @import "tailwindcss/utilities";
-
+/* body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+} */
 @layer utilities {
   /* Chrome, Safari and Opera */
   .no-scrollbar::-webkit-scrollbar {

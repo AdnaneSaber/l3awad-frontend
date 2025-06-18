@@ -4,8 +4,8 @@ import React from "react"
 
 const Footer = () => {
   return (
-    <div className="bg-white flex justify-center items-center">
-      <footer className="bg-white text-gray-700 border-t border-gray-200">
+    <footer className="bg-white flex justify-center items-center mt-auto">
+      <div className="bg-white text-gray-700 border-t border-gray-200">
         <div className="container mx-auto px-6 py-8">
           <div className="grid grid-cols-1 md:grid-cols-4 gap-6">
             <div>
@@ -158,8 +158,8 @@ const Footer = () => {
             </Text>
           </div>
         </div>
-      </footer>
-    </div>
+      </div>
+    </footer>
   )
 }
 

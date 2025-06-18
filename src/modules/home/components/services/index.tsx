@@ -4,8 +4,8 @@ import React from "react"
 const Services = () => {
   return (
     <section className="bg-white dark:bg-gray-900">
-      <div className="container px-6 py-10 mx-auto">
-        <h1 className="text-3xl font-bold tracking-tight text-black sm:text-4xl">
+      <div className="sm:container px-6 py-10 mx-auto w-full">
+        <h1 className="sm:text-3xl font-bold tracking-tight text-black text-2xl">
           Plus de sécurité ? {BRAND_NAME}®.
         </h1>
 
