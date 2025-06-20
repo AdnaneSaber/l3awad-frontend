@@ -17,7 +17,7 @@ const ListAbout = () => {
             }`}
           >
             <div
-              className={`mx-auto max-w-xl px-6 lg:max-w-none lg:py-16 lg:px-0 ${
+              className={`mx-auto max-w-xl px-1 lg:max-w-none lg:py-16 lg:px-0 ${
                 index % 2 === 1 ? "lg:col-start-2" : "lg:mx-0"
               }`}
             >

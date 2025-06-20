@@ -14,6 +14,7 @@ import HomeBlock from "../../../modules/home/components/home-block/index"
 import AboutHome from "@modules/home/components/main-about"
 import React from "react"
 import { BRAND_NAME } from "@lib/brand-config"
+import { InfiniteMovingCardsDemo } from "../../../modules/home/components/InfiniteMovingCardsdemo/index"
 
 export const metadata: Metadata = {
   title: `${BRAND_NAME} | Home`,
@@ -46,6 +47,7 @@ export default async function Home(props: {
       <Services />
       <ListAbout />
       <Swiper2 />
+      <InfiniteMovingCardsDemo />
       <Incentive />
       <WhyUs />
       <Features />

@@ -20,13 +20,9 @@ const Services = () => {
         <div className="grid grid-cols-1 gap-8 mt-8 xl:mt-12 xl:gap-12 md:grid-cols-2">
           <div className="p-6 border  border-r-gray-200 dark:border-gray-700">
             <div className="md:flex md:items-start md:-mx-4">
-              <span className="inline-block p-2 text-black bg-white  md:mx-4 text-2xl">
-                🛡️
-              </span>
-
               <div className="mt-4 md:mx-4 md:mt-0">
                 <h1 className="text-xl font-medium text-black capitalize ">
-                  Sécurité Invisible & Personnalisée
+                  🛡️ Sécurité Invisible & Personnalisée
                 </h1>
 
                 <p className="mt-3 text-gray-700 ">
@@ -41,13 +37,9 @@ const Services = () => {
 
           <div className="p-6 border  border-r-gray-200 dark:border-gray-700">
             <div className="md:flex md:items-start md:-mx-4">
-              <span className="inline-block p-2 text-black bg-white  md:mx-4 text-2xl">
-                🪑
-              </span>
-
               <div className="mt-4 md:mx-4 md:mt-0">
                 <h1 className="text-xl font-medium text-black capitalize ">
-                  Mobilier avec Compartiment Secret
+                  🪑 Mobilier avec Compartiment Secret
                 </h1>
 
                 <p className="mt-3 text-gray-700 ">
@@ -62,13 +54,9 @@ const Services = () => {
 
           <div className="p-6 border  border-r-gray-200 dark:border-gray-700">
             <div className="md:flex md:items-start md:-mx-4">
-              <span className="inline-block p-2 text-black bg-white  md:mx-4 text-2xl">
-                🌿
-              </span>
-
               <div className="mt-4 md:mx-4 md:mt-0">
                 <h1 className="text-xl font-medium text-black capitalize ">
-                  Fabrication Locale & Durable
+                  🌿 Fabrication Locale & Durable
                 </h1>
 
                 <p className="mt-3 text-gray-700 ">
@@ -83,13 +71,9 @@ const Services = () => {
 
           <div className="p-6 border  border-r-gray-200 dark:border-gray-700">
             <div className="md:flex md:items-start md:-mx-4">
-              <span className="inline-block p-2 text-black bg-white  md:mx-4 text-2xl">
-                ✏️
-              </span>
-
               <div className="mt-4 md:mx-4 md:mt-0">
                 <h1 className="text-xl font-medium text-black capitalize ">
-                  Design Sur-Mesure
+                  ✏️ Design Sur-Mesure
                 </h1>
 
                 <p className="mt-3 text-gray-700 ">
