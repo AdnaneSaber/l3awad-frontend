@@ -1,11 +1,12 @@
 "use client"
-
-import React, { useEffect, useState } from "react"
 import { InfiniteMovingCards } from "../infinite-moving-cards"
 
 export function InfiniteMovingCardsDemo() {
   return (
     <div className="h-[40rem] flex flex-col antialiased bg-white items-center justify-center relative overflow-hidden">
+      <h2 className="flex justify-center mt-10 text-4xl font-bold text-black mb-20">
+        What Customer Says!
+      </h2>
       <InfiniteMovingCards
         items={testimonials}
         direction="right"

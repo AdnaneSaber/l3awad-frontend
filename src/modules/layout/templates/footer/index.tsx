@@ -1,5 +1,6 @@
 import { BRAND_NAME } from "@lib/brand-config"
 import { Text } from "@medusajs/ui"
+import Link from "next/link"
 import React from "react"
 
 const Footer = () => {
@@ -40,19 +41,19 @@ const Footer = () => {
               <h3 className="font-semibold mb-2">Mon Compte</h3>
               <ul className="text-sm space-y-2">
                 <li>
-                  <a href="#" className="hover:text-blue-600">
+                  <Link href="/account" className="hover:text-blue-600">
                     Mon Compte
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a href="#" className="hover:text-blue-600">
-                    Historique des commandes
-                  </a>
+                  <Link href="/store" className="hover:text-blue-600">
+                    Store
+                  </Link>
                 </li>
                 <li>
-                  <a href="#" className="hover:text-blue-600">
+                  <Link href="/cart" className="hover:text-blue-600">
                     Panier
-                  </a>
+                  </Link>
                 </li>
                 <li>
                   <a href="#" className="hover:text-blue-600">
@@ -66,14 +67,14 @@ const Footer = () => {
               <h3 className="font-semibold mb-2">Aide</h3>
               <ul className="text-sm space-y-2">
                 <li>
-                  <a href="#" className="hover:text-blue-600">
+                  <Link href="/contact" className="hover:text-blue-600">
                     Contact
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a href="#" className="hover:text-blue-600">
+                  <Link href="/faqs" className="hover:text-blue-600">
                     FAQs
-                  </a>
+                  </Link>
                 </li>
                 <li>
                   <a href="#" className="hover:text-blue-600">
@@ -93,17 +94,17 @@ const Footer = () => {
               <ul className="text-sm space-y-2">
                 <li>
                   <a href="#" className="hover:text-blue-600">
-                    Imprimantes
+                    Coffres-forts
                   </a>
                 </li>
                 <li>
                   <a href="#" className="hover:text-blue-600">
-                    Cartouches
+                    Meubles
                   </a>
                 </li>
                 <li>
                   <a href="#" className="hover:text-blue-600">
-                    Encre
+                    Accessoires
                   </a>
                 </li>
               </ul>

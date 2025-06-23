@@ -1,4 +1,5 @@
 import { BRAND_NAME } from "@lib/brand-config"
+import Link from "next/link"
 import React from "react"
 
 const ProductSpecial = () => {
@@ -85,7 +86,8 @@ const ProductSpecial = () => {
             </ul>
           </div>
           <div className="place-content-end ml-16 lg:ml-28 mt-8 lg:mt-0">
-            <button
+            <Link
+              href="/contact"
               className="group relative inline-block focus:ring-3 focus:outline-hidden"
               type="button"
             >
@@ -94,7 +96,7 @@ const ProductSpecial = () => {
               <span className="relative inline-block border-2 border-current px-8 py-3 text-sm font-bold tracking-widest text-black uppercase">
                 → DEMANDER UNE OFFRE
               </span>
-            </button>
+            </Link>
           </div>
         </div>
       </div>

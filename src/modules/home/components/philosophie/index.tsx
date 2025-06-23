@@ -168,10 +168,8 @@ export default function Philosophie() {
             </div>
           </div>
         </div>
-
-        {/* Background Color */}
         <div className="absolute inset-0 grid grid-cols-12 size-full">
-          <div className="col-span-full lg:col-span-7 lg:col-start-6 bg-gray-100 w-full h-5/6  sm:h-3/4 lg:h-full dark:bg-neutral-800"></div>
+          <div className="col-span-full lg:col-span-7 lg:col-start-6 bg-gray-100 w-full h-5/6  sm:h-3/4 lg:h-full "></div>
         </div>
       </div>
     </div>
