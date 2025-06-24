@@ -113,7 +113,7 @@ const Footer = () => {
 
           <div className="flex flex-col md:flex-row justify-between items-center mt-6">
             <div className="flex space-x-2">
-              <img
+              {/* <img
                 src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-v52tLnvL3FEjfxjPvZWbvUMYvVUtAm9R6A&s"
                 alt="Google Play"
                 className="h-10"
@@ -122,7 +122,7 @@ const Footer = () => {
                 src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSJgk5tpxJC_1CAnsXwo2VvBGyQGI-o5c1PJw&s"
                 alt="App Store"
                 className="h-10"
-              />
+              /> */}
             </div>
             <div className="flex space-x-2 mt-4 md:mt-0">
               <img

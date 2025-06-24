@@ -1,10 +1,16 @@
 import { BRAND_NAME } from "@lib/brand-config"
+import { Metadata } from "next"
 import React from "react"
+export const metadata: Metadata = {
+  title: `${BRAND_NAME} | Philosophie`,
+  description:
+    "Découvrez notre philosophie et notre engagement envers l'artisanat de qualité.",
+}
 
 export default function Philosophie() {
   return (
-    <section>
-      <div className="py-6">
+    <main>
+      <section className="py-6">
         <div className="overflow-hidden">
           <div className="">
             <div className="mx-auto flex max-w-5xl flex-col items-center">
@@ -20,53 +26,17 @@ export default function Philosophie() {
                   meubles, conçus pour préserver en toute sécurité et discrétion
                   les objets les plus précieux de votre foyer.
                 </p>
-                {/* <div className="mt-12 flex w-full flex-col justify-center gap-2 sm:flex-row">
-                <button className="inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 bg-zinc-900 text-white hover:bg-zinc-900/90 h-10 px-4 py-2">
-                  Get started now
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="24"
-                    height="24"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                    stroke-width="2"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    className="lucide lucide-chevron-right ml-2 h-4"
-                  >
-                    <path d="m9 18 6-6-6-6"></path>
-                  </svg>
-                </button>
-                <button className="inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 hover:bg-zinc-100 hover:text-zinc-800 h-10 px-4 py-2">
-                  Learn more
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="24"
-                    height="24"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                    stroke-width="2"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    className="lucide lucide-chevron-right ml-2 h-4"
-                  >
-                    <path d="m9 18 6-6-6-6"></path>
-                  </svg>
-                </button>
-              </div> */}
               </div>
             </div>
             <img
-              src="/home/placeholder-wide-1.jpg"
+              src="/home/phelo.jpg"
               alt="placeholder"
               className="mx-auto mt-24 max-h-[700px] w-full max-w-7xl object-cover shadow-lg"
             />
           </div>
         </div>
-      </div>
-      <div className="py-24 relative xl:mr-0 lg:mr-5 mr-0">
+      </section>
+      <section className="py-24 relative xl:mr-0 lg:mr-5 mr-0">
         <div className="w-full max-w-7xl px-4 md:px-5 lg:px-5 mx-auto">
           <div className="w-full justify-start items-center xl:gap-12 gap-10 grid lg:grid-cols-2 grid-cols-1">
             <div className="w-full flex-col justify-center lg:items-start items-center gap-10 inline-flex">
@@ -135,7 +105,7 @@ export default function Philosophie() {
             </div>
           </div>
         </div>
-      </div>
+      </section>
       <section className="py-12 relative">
         <div className="w-full max-w-7xl px-4 md:px-5 lg:px-5 mx-auto">
           <div className="w-full justify-start items-center gap-8 grid lg:grid-cols-2 grid-cols-1">
@@ -162,6 +132,120 @@ export default function Philosophie() {
           </div>
         </div>
       </section>
-    </section>
+      <section className="bg-white">
+        <div className="gap-16 items-center py-8 px-4 mx-auto max-w-screen-xl lg:grid lg:grid-cols-2 lg:py-16 lg:px-6">
+          <div className="font-light text-gray-500 sm:text-lg">
+            <h2 className="mb-4 text-4xl tracking-tight font-extrabold text-gray-900">
+              We didn{`'`}t reinvent the wheel
+            </h2>
+            <p className="mb-4">
+              We are strategists, designers and developers. Innovators and
+              problem solvers. Small enough to be simple and quick, but big
+              enough to deliver the scope you want at the pace you need. Small
+              enough to be simple and quick, but big enough to deliver the scope
+              you want at the pace you need.
+            </p>
+            <p>
+              We are strategists, designers and developers. Innovators and
+              problem solvers. Small enough to be simple and quick.
+            </p>
+          </div>
+          <div className="grid grid-cols-2 gap-4 mt-8">
+            <img
+              className="w-full"
+              src="/product 3/third-product04.png"
+              alt="office content 1"
+            />
+            <img
+              className="mt-4 w-full lg:mt-10"
+              src="/product 3/third-product07.png"
+              alt="office content 2"
+            />
+          </div>
+        </div>
+      </section>
+      <section className="py-4 px-2 mx-auto max-w-screen-xl sm:py-4 lg:px-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-5 gap-4 h-full">
+          <div className="col-span-2 sm:col-span-1 md:col-span-2 bg-gray-50 h-auto md:h-full flex flex-col">
+            <a
+              href=""
+              className="group relative flex flex-col overflow-hidden px-4 pb-4 pt-40 flex-grow"
+            >
+              <img
+                src="/product 3/third-product04.png"
+                alt=""
+                className="absolute inset-0 h-full w-full object-cover group-hover:scale-105 transition-transform duration-500 ease-in-out"
+              />
+              <div className="absolute inset-0 bg-gradient-to-b from-gray-900/25 to-gray-900/5"></div>
+              <h3 className="z-10 text-2xl font-medium text-white absolute top-0 left-0 p-4 xs:text-xl md:text-3xl">
+                Wines
+              </h3>
+            </a>
+          </div>
+          <div className="col-span-2 sm:col-span-1 md:col-span-2 bg-stone-50">
+            <a
+              href=""
+              className="group relative flex flex-col overflow-hidden px-4 pb-4 pt-40 mb-4"
+            >
+              <img
+                src="/product 3/third-product05.png"
+                alt=""
+                className="absolute inset-0 h-full w-full object-cover group-hover:scale-105 transition-transform duration-500 ease-in-out"
+              />
+              <div className="absolute inset-0 bg-gradient-to-b from-gray-900/25 to-gray-900/5"></div>
+              <h3 className="z-10 text-2xl font-medium text-white absolute top-0 left-0 p-4 xs:text-xl md:text-3xl">
+                Gin
+              </h3>
+            </a>
+            <div className="grid gap-4 grid-cols-2 sm:grid-cols-2 lg:grid-cols-2">
+              <a
+                href=""
+                className="group relative flex flex-col overflow-hidden px-4 pb-4 pt-40"
+              >
+                <img
+                  src="/product 3/third-product06.png"
+                  alt=""
+                  className="absolute inset-0 h-full w-full object-cover group-hover:scale-105 transition-transform duration-500 ease-in-out"
+                />
+                <div className="absolute inset-0 bg-gradient-to-b from-gray-900/25 to-gray-900/5"></div>
+                <h3 className="z-10 text-2xl font-medium text-white absolute top-0 left-0 p-4 xs:text-xl md:text-3xl">
+                  Whiskey
+                </h3>
+              </a>
+              <a
+                href=""
+                className="group relative flex flex-col overflow-hidden px-4 pb-4 pt-40"
+              >
+                <img
+                  src="/product 3/third-product07.png"
+                  alt=""
+                  className="absolute inset-0 h-full w-full object-cover group-hover:scale-105 transition-transform duration-500 ease-in-out"
+                />
+                <div className="absolute inset-0 bg-gradient-to-b from-gray-900/25 to-gray-900/5"></div>
+                <h3 className="z-10 text-2xl font-medium text-white absolute top-0 left-0 p-4 xs:text-xl md:text-3xl">
+                  Vodka
+                </h3>
+              </a>
+            </div>
+          </div>
+          <div className="col-span-2 sm:col-span-1 md:col-span-1 bg-sky-50 h-auto md:h-full flex flex-col">
+            <a
+              href=""
+              className="group relative flex flex-col overflow-hidden px-4 pb-4 pt-40 flex-grow"
+            >
+              <img
+                src="/product 3/third-product08.png"
+                alt=""
+                className="absolute inset-0 h-full w-full object-cover group-hover:scale-105 transition-transform duration-500 ease-in-out"
+              />
+              <div className="absolute inset-0 bg-gradient-to-b from-gray-900/25 to-gray-900/5"></div>
+              <h3 className="z-10 text-2xl font-medium text-white absolute top-0 left-0 p-4 xs:text-xl md:text-3xl">
+                Brandy
+              </h3>
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
   )
 }

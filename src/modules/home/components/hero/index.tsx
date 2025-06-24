@@ -17,13 +17,13 @@ const Hero = () => {
         <div className="px-6 mx-auto sm:px-8 lg:px-12 max-w-7xl">
           <div className="max-w-4xl mx-auto text-center pb-24 sm:mb-1">
             <h1 className="text-white mb-4 text-5xl font-bold font-sans italic leading-none text-center lg:text-8xl xl:text-8xl">
-              MA BOÎTE
+              MA BOÎTE{" "}
               <span className="text-black ml-0 drop-shadow-[0_0_4px_white]">
                 MYSTER
               </span>
             </h1>
             <p className="text-white text-sm lg:text-4xl font-sans italic text-center">
-              cachez vos affaires dans une boîte
+              cachez vos affaires dans une boîte{" "}
               <span className="thick-underline text-[#000000] relative no-underline uppercase cursor-pointer font-bold">
                 secrète
               </span>

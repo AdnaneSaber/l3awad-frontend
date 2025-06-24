@@ -14,6 +14,8 @@ import HomeBlock from "../../../modules/home/components/home-block/index"
 import AboutHome from "@modules/home/components/main-about"
 import React from "react"
 import { BRAND_NAME } from "@lib/brand-config"
+import MainHero from "@modules/home/components/main"
+import { Blog } from "@modules/home/components/blog"
 
 export const metadata: Metadata = {
   title: `${BRAND_NAME} | Home`,
@@ -40,7 +42,9 @@ export default async function Home(props: {
 
   return (
     <React.Fragment>
+      {/* <MainHero /> */}
       <Hero />
+      {/* <Blog /> */}
       <FeaturedProducts collections={collections} region={region} />
       <AboutHome />
       <Services />
