@@ -1,8 +1,14 @@
 "use client"
 
+import { useEffect } from "react"
+import AOS from "aos"
+import "aos/dist/aos.css"
 import { BRAND_NAME } from "@lib/brand-config"
 
 const Hero = () => {
+  useEffect(() => {
+    AOS.init({ offset: 100, duration: 1000 })
+  }, [])
   return (
     <div className="relative pt-48 pb-12 bg-black xl:pt-60 sm:pb-16 lg:pb-32 xl:pb-48 2xl:pb-56">
       <div className="absolute inset-0">
@@ -15,8 +21,11 @@ const Hero = () => {
 
       <div className="relative">
         <div className="px-6 mx-auto sm:px-8 lg:px-12 max-w-7xl">
-          <div className="max-w-4xl mx-auto text-center pb-24 sm:mb-1">
-            <h1 className="text-white mb-4 text-5xl font-bold font-sans italic leading-none text-center lg:text-8xl xl:text-8xl">
+          <div
+            className="max-w-4xl mx-auto text-center pb-24 sm:mb-1"
+            data-aos="flip-up"
+          >
+            <h1 className="text-white mb-4 text-5xl font-bold font-sans italic leading-none text-center lg:text-8xl xl:text-7xl">
               MA BOÎTE{" "}
               <span className="text-black ml-0 drop-shadow-[0_0_4px_white]">
                 MYSTER
