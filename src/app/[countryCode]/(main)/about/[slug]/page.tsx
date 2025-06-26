@@ -84,12 +84,11 @@ export default async function AboutDetailPage({
         </div>
       </div>
 
+      <InfiniteMovingCardsDemo />
+      <ProductSpecial />
       {region && collections && (
         <FeaturedProducts collections={collections} region={region} />
       )}
-
-      <InfiniteMovingCardsDemo />
-      <ProductSpecial />
     </div>
   )
 }
