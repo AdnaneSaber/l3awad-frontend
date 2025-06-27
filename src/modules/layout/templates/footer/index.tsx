@@ -1,11 +1,12 @@
 import { BRAND_NAME } from "@lib/brand-config"
 import { Text } from "@medusajs/ui"
+import Link from "next/link"
 import React from "react"
 
 const Footer = () => {
   return (
-    <div className="bg-white flex justify-center items-center">
-      <footer className="bg-white text-gray-700 border-t border-gray-200">
+    <footer className="bg-white flex justify-center items-center mt-auto">
+      <div className="bg-white text-gray-700 border-t border-gray-200">
         <div className="container mx-auto px-6 py-8">
           <div className="grid grid-cols-1 md:grid-cols-4 gap-6">
             <div>
@@ -40,19 +41,19 @@ const Footer = () => {
               <h3 className="font-semibold mb-2">Mon Compte</h3>
               <ul className="text-sm space-y-2">
                 <li>
-                  <a href="#" className="hover:text-blue-600">
+                  <Link href="/account" className="hover:text-blue-600">
                     Mon Compte
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a href="#" className="hover:text-blue-600">
-                    Historique des commandes
-                  </a>
+                  <Link href="/store" className="hover:text-blue-600">
+                    Store
+                  </Link>
                 </li>
                 <li>
-                  <a href="#" className="hover:text-blue-600">
+                  <Link href="/cart" className="hover:text-blue-600">
                     Panier
-                  </a>
+                  </Link>
                 </li>
                 <li>
                   <a href="#" className="hover:text-blue-600">
@@ -66,14 +67,14 @@ const Footer = () => {
               <h3 className="font-semibold mb-2">Aide</h3>
               <ul className="text-sm space-y-2">
                 <li>
-                  <a href="#" className="hover:text-blue-600">
+                  <Link href="/contact" className="hover:text-blue-600">
                     Contact
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a href="#" className="hover:text-blue-600">
+                  <Link href="/faqs" className="hover:text-blue-600">
                     FAQs
-                  </a>
+                  </Link>
                 </li>
                 <li>
                   <a href="#" className="hover:text-blue-600">
@@ -93,17 +94,17 @@ const Footer = () => {
               <ul className="text-sm space-y-2">
                 <li>
                   <a href="#" className="hover:text-blue-600">
-                    Imprimantes
+                    Coffres-forts
                   </a>
                 </li>
                 <li>
                   <a href="#" className="hover:text-blue-600">
-                    Cartouches
+                    Meubles
                   </a>
                 </li>
                 <li>
                   <a href="#" className="hover:text-blue-600">
-                    Encre
+                    Accessoires
                   </a>
                 </li>
               </ul>
@@ -112,7 +113,7 @@ const Footer = () => {
 
           <div className="flex flex-col md:flex-row justify-between items-center mt-6">
             <div className="flex space-x-2">
-              <img
+              {/* <img
                 src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-v52tLnvL3FEjfxjPvZWbvUMYvVUtAm9R6A&s"
                 alt="Google Play"
                 className="h-10"
@@ -121,7 +122,7 @@ const Footer = () => {
                 src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSJgk5tpxJC_1CAnsXwo2VvBGyQGI-o5c1PJw&s"
                 alt="App Store"
                 className="h-10"
-              />
+              /> */}
             </div>
             <div className="flex space-x-2 mt-4 md:mt-0">
               <img
@@ -158,8 +159,8 @@ const Footer = () => {
             </Text>
           </div>
         </div>
-      </footer>
-    </div>
+      </div>
+    </footer>
   )
 }
 

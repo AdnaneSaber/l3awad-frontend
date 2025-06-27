@@ -1,4 +1,5 @@
 import { BRAND_NAME } from "@lib/brand-config"
+import Link from "next/link"
 import React from "react"
 
 const Incentive = () => {
@@ -11,7 +12,7 @@ const Incentive = () => {
             id="about"
           >
             <img
-              className="lg:w-1/2 "
+              className="lg:w-1/2 shadow-2xl ring-1 ring-black ring-opacity-5"
               src="/home/philo.jpeg"
               alt="port image"
             />
@@ -20,7 +21,7 @@ const Incentive = () => {
               <h2 className="text-black md:text-5xl text-2xl font-bold mb-4">
                 Notre philosophie
               </h2>
-              <p className="text-black text-md mb-6">
+              <p className="text-black text-md mb-1">
                 Chez {BRAND_NAME}, nous croyons qu’un meuble peut être bien plus
                 qu’un simple objet de décoration. Il peut devenir un espace
                 personnel sécurisé, élégant et discret. Notre mission est de
@@ -29,9 +30,9 @@ const Incentive = () => {
                 mais redoutablement efficaces.
               </p>
 
-              <div className="mt-6">
-                <a
-                  href="#_"
+              <div className="mt-2">
+                <Link
+                  href="/philosophie"
                   className="relative inline-block px-4 py-2 font-medium group uppercase"
                 >
                   <span className="absolute inset-0 w-full h-full transition duration-200 ease-out transform translate-x-1 translate-y-1 bg-black group-hover:-translate-x-0 group-hover:-translate-y-0"></span>
@@ -39,7 +40,7 @@ const Incentive = () => {
                   <span className="relative text-black group-hover:text-white">
                     En savoir plus
                   </span>
-                </a>
+                </Link>
               </div>
             </div>
           </section>

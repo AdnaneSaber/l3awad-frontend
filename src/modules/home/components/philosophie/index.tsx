@@ -24,7 +24,7 @@ Les méthodes de sécurité classiques ne suffisent plus à dissuader les voleur
         <path d="M5 12.5A3.5 3.5 0 0 1 8.5 9H12v7H8.5A3.5 3.5 0 0 1 5 12.5z" />
       </svg>
     ),
-    image: "/home/features (1).jpg",
+    image: "/home/features1.jpg",
   },
   {
     id: "tabs-with-card-2",
@@ -43,7 +43,7 @@ Nos foyers ne sont pas à l’abri — même dans les quartiers réputés calmes
         <path d="M3.34 19a10 10 0 1 1 17.32 0" />
       </svg>
     ),
-    image: "/home/features (1).png",
+    image: "/home/features1.png",
   },
   {
     id: "tabs-with-card-3",
@@ -62,7 +62,7 @@ Documents, bijoux, argent liquide ou souvenirs familiaux... souvent irremplaçab
         <path d="M5 3v4M19 17v4M3 5h4M17 19h4" />
       </svg>
     ),
-    image: "/home/features (2).png",
+    image: "/home/features2.png",
   },
 ]
 
@@ -168,10 +168,8 @@ export default function Philosophie() {
             </div>
           </div>
         </div>
-
-        {/* Background Color */}
         <div className="absolute inset-0 grid grid-cols-12 size-full">
-          <div className="col-span-full lg:col-span-7 lg:col-start-6 bg-gray-100 w-full h-5/6  sm:h-3/4 lg:h-full dark:bg-neutral-800"></div>
+          <div className="col-span-full lg:col-span-7 lg:col-start-6 bg-gray-100 w-full h-5/6  sm:h-3/4 lg:h-full "></div>
         </div>
       </div>
     </div>

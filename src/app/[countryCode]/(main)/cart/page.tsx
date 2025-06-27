@@ -1,3 +1,4 @@
+import { BRAND_NAME } from "@lib/brand-config"
 import { retrieveCart } from "@lib/data/cart"
 import { retrieveCustomer } from "@lib/data/customer"
 import CartTemplate from "@modules/cart/templates"
@@ -5,7 +6,7 @@ import { Metadata } from "next"
 import { notFound } from "next/navigation"
 
 export const metadata: Metadata = {
-  title: "Cart",
+  title: `${BRAND_NAME} | Cart`,
   description: "View your cart",
 }
 

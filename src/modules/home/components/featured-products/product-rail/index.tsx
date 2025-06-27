@@ -28,7 +28,7 @@ export default async function ProductRail({
   }
 
   return (
-    <div className="content-container py-12 small:py-24">
+    <div className="content-container pt-6 pb-1 small:pt-12 small:pb-1">
       <div className="flex justify-between mb-8">
         <Text className="text-3xl font-bold tracking-tight text-black sm:text-4xl">
           {collection.title}
