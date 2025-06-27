@@ -1,123 +1,167 @@
-import { BRAND_NAME } from "@/lib/brand-config"
-import { listCategories } from "@lib/data/categories"
-import { listCollections } from "@lib/data/collections"
-import { Text, clx } from "@medusajs/ui"
+import { BRAND_NAME } from "@lib/brand-config"
+import { Text } from "@medusajs/ui"
+import Link from "next/link"
+import React from "react"
 
-import LocalizedClientLink from "@modules/common/components/localized-client-link"
-import MedusaCTA from "@modules/layout/components/medusa-cta"
-
-export default async function Footer() {
-  const { collections } = await listCollections({
-    fields: "*products",
-  })
-  const productCategories = await listCategories()
-
+const Footer = () => {
   return (
-    <footer className="border-t border-ui-border-base w-full">
-      <div className="content-container flex flex-col w-full">
-        <div className="flex flex-col gap-y-6 xsmall:flex-row items-start justify-between py-40">
-          <div>
-            <LocalizedClientLink
-              href="/"
-              className="txt-compact-xlarge-plus text-ui-fg-subtle hover:text-ui-fg-base uppercase"
-            >
-              {BRAND_NAME}
-            </LocalizedClientLink>
-          </div>
-          <div className="text-small-regular gap-10 md:gap-x-16 grid grid-cols-2 sm:grid-cols-3">
-            {productCategories && productCategories?.length > 0 && (
-              <div className="flex flex-col gap-y-2">
-                <span className="txt-small-plus txt-ui-fg-base">
-                  Categories
-                </span>
-                <ul
-                  className="grid grid-cols-1 gap-2"
-                  data-testid="footer-categories"
-                >
-                  {productCategories?.slice(0, 6).map((c) => {
-                    if (c.parent_category) {
-                      return
-                    }
+    <footer className="bg-white flex justify-center items-center mt-auto">
+      <div className="bg-white text-gray-700 border-t border-gray-200">
+        <div className="container mx-auto px-6 py-8">
+          <div className="grid grid-cols-1 md:grid-cols-4 gap-6">
+            <div>
+              <h2 className="text-xl font-semibold flex items-center space-x-2 uppercase">
+                <span>{BRAND_NAME}</span>
+              </h2>
+              <p className="mt-2 text-sm text-gray-600">
+                Mobilier intelligent pour dissimuler vos objets de valeur en
+                toute sécurité.
+              </p>
+              <p className="mt-2 text-sm text-gray-600">
+                <span className="font-semibold">(219) 555-0114</span>
+              </p>
 
-                    const children =
-                      c.category_children?.map((child) => ({
-                        name: child.name,
-                        handle: child.handle,
-                        id: child.id,
-                      })) || null
+              <div className="flex space-x-3 mt-3">
+                <a href="#" className="text-blue-600">
+                  <i className="fab fa-facebook"></i>
+                </a>
+                <a href="#" className="text-red-600">
+                  <i className="fab fa-reddit"></i>
+                </a>
+                <a href="#" className="text-green-500">
+                  <i className="fab fa-whatsapp"></i>
+                </a>
+                <a href="#" className="text-pink-600">
+                  <i className="fab fa-pinterest"></i>
+                </a>
+              </div>
+            </div>
 
-                    return (
-                      <li
-                        className="flex flex-col gap-2 text-ui-fg-subtle txt-small"
-                        key={c.id}
-                      >
-                        <LocalizedClientLink
-                          className={clx(
-                            "hover:text-ui-fg-base",
-                            children && "txt-small-plus"
-                          )}
-                          href={`/categories/${c.handle}`}
-                          data-testid="category-link"
-                        >
-                          {c.name}
-                        </LocalizedClientLink>
-                        {children && (
-                          <ul className="grid grid-cols-1 ml-3 gap-2">
-                            {children &&
-                              children.map((child) => (
-                                <li key={child.id}>
-                                  <LocalizedClientLink
-                                    className="hover:text-ui-fg-base"
-                                    href={`/categories/${child.handle}`}
-                                    data-testid="category-link"
-                                  >
-                                    {child.name}
-                                  </LocalizedClientLink>
-                                </li>
-                              ))}
-                          </ul>
-                        )}
-                      </li>
-                    )
-                  })}
-                </ul>
-              </div>
-            )}
-            {collections && collections.length > 0 && (
-              <div className="flex flex-col gap-y-2">
-                <span className="txt-small-plus txt-ui-fg-base">
-                  Collections
-                </span>
-                <ul
-                  className={clx(
-                    "grid grid-cols-1 gap-2 text-ui-fg-subtle txt-small",
-                    {
-                      "grid-cols-2": (collections?.length || 0) > 3,
-                    }
-                  )}
-                >
-                  {collections?.slice(0, 6).map((c) => (
-                    <li key={c.id}>
-                      <LocalizedClientLink
-                        className="hover:text-ui-fg-base"
-                        href={`/collections/${c.handle}`}
-                      >
-                        {c.title}
-                      </LocalizedClientLink>
-                    </li>
-                  ))}
-                </ul>
-              </div>
-            )}
+            <div>
+              <h3 className="font-semibold mb-2">Mon Compte</h3>
+              <ul className="text-sm space-y-2">
+                <li>
+                  <Link href="/account" className="hover:text-blue-600">
+                    Mon Compte
+                  </Link>
+                </li>
+                <li>
+                  <Link href="/store" className="hover:text-blue-600">
+                    Store
+                  </Link>
+                </li>
+                <li>
+                  <Link href="/cart" className="hover:text-blue-600">
+                    Panier
+                  </Link>
+                </li>
+                <li>
+                  <a href="#" className="hover:text-blue-600">
+                    Liste de souhaits
+                  </a>
+                </li>
+              </ul>
+            </div>
+
+            <div>
+              <h3 className="font-semibold mb-2">Aide</h3>
+              <ul className="text-sm space-y-2">
+                <li>
+                  <Link href="/contact" className="hover:text-blue-600">
+                    Contact
+                  </Link>
+                </li>
+                <li>
+                  <Link href="/faqs" className="hover:text-blue-600">
+                    FAQs
+                  </Link>
+                </li>
+                <li>
+                  <a href="#" className="hover:text-blue-600">
+                    Conditions générales
+                  </a>
+                </li>
+                <li>
+                  <a href="#" className="hover:text-blue-600">
+                    Politique de confidentialité
+                  </a>
+                </li>
+              </ul>
+            </div>
+
+            <div>
+              <h3 className="font-semibold mb-2">Catégories</h3>
+              <ul className="text-sm space-y-2">
+                <li>
+                  <a href="#" className="hover:text-blue-600">
+                    Coffres-forts
+                  </a>
+                </li>
+                <li>
+                  <a href="#" className="hover:text-blue-600">
+                    Meubles
+                  </a>
+                </li>
+                <li>
+                  <a href="#" className="hover:text-blue-600">
+                    Accessoires
+                  </a>
+                </li>
+              </ul>
+            </div>
           </div>
-        </div>
-        <div className="flex w-full mb-16 justify-between text-ui-fg-muted">
-          <Text className="txt-compact-small">
-            © {new Date().getFullYear()} {BRAND_NAME}. All rights reserved.
-          </Text>
-          <MedusaCTA />
+
+          <div className="flex flex-col md:flex-row justify-between items-center mt-6">
+            <div className="flex space-x-2">
+              {/* <img
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-v52tLnvL3FEjfxjPvZWbvUMYvVUtAm9R6A&s"
+                alt="Google Play"
+                className="h-10"
+              />
+              <img
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSJgk5tpxJC_1CAnsXwo2VvBGyQGI-o5c1PJw&s"
+                alt="App Store"
+                className="h-10"
+              /> */}
+            </div>
+            <div className="flex space-x-2 mt-4 md:mt-0">
+              <img
+                src="https://www.logo.wine/a/logo/Apple_Pay/Apple_Pay-White-Dark-Background-Logo.wine.svg"
+                alt="Apple Pay"
+                className="h-[30px] w-10 rounded-md"
+              />
+              <img
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSynWEtLag--sQ4XlfTwHh9_DAnfcglW7C3iw&s"
+                alt="Visa"
+                className="h-[30px] w-10 rounded-md"
+              />
+              <img
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT6mJsEDg1aR_JCFb3ohk2nCxjgSvkWnpmlKg&s"
+                alt="Mastercard"
+                className="h-[30px] w-10 rounded-md"
+              />
+              <img
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQveKfGcJ1tSEY8bLg52DxvVrFDJXmxXJgv1Q&s"
+                alt="discover"
+                className="h-[30px] w-10 rounded-md"
+              />
+              <img
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSDS0zyuJdI4e7E1VGaNDAVtRn3fGTzr0PBOA&s"
+                alt="Secure Payment"
+                className="h-[30px] w-10 rounded-md"
+              />
+            </div>
+          </div>
+
+          <div className="text-center text-sm text-gray-500 mt-6 border-t pt-4">
+            <Text className="txt-compact-small">
+              © {new Date().getFullYear()} {BRAND_NAME}. Tous droits réservés.
+            </Text>
+          </div>
         </div>
       </div>
     </footer>
   )
 }
+
+export default Footer

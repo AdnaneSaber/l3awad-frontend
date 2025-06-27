@@ -21,7 +21,12 @@ checkEnvVariables()
  */
 const nextConfig = {
   reactStrictMode: true,
-  allowedDevOrigins: ['medusa-backend', 'medusa-storefront', 'localhost', 'medusa-redis'],
+  allowedDevOrigins: [
+    "medusa-backend",
+    "medusa-storefront",
+    "localhost",
+    "medusa-redis",
+  ],
   logging: {
     fetches: {
       fullUrl: true,
@@ -58,6 +63,23 @@ const nextConfig = {
       {
         protocol: "https",
         hostname: "medusa-server-testing.s3.us-east-1.amazonaws.com",
+      },
+      {
+        protocol: "https",
+        hostname: "images.unsplash.com",
+      },
+      {
+        protocol: "https",
+        hostname: "pagedone.io",
+      },
+      {
+        protocol: "http",
+        hostname: "api.l3awad.ma",
+      },
+      {
+        protocol: "https",
+        hostname: "firebasestorage.googleapis.com",
+        pathname: "/**",
       },
     ],
   },
