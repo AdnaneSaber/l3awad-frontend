@@ -4,7 +4,7 @@ import React from "react"
 
 const ProductSpecial = () => {
   return (
-    <section className="py-8 mx-auto justify-self-center grid items-center gap-8 lg:grid-cols-2">
+    <section className="py-8 px-2 mx-auto justify-self-center grid items-center gap-8 lg:grid-cols-2">
       <img
         src="/product 5/leo.gif"
         alt="placeholder hero"
@@ -22,8 +22,8 @@ const ProductSpecial = () => {
         </p>
         <div className="flex flex-col sm:flex-row sm:mb-2">
           <div>
-            <ul className="ml-4 space-y-4 text-left">
-              <li className="flex items-center gap-3">
+            <ul className="space-y-4 text-left">
+              <li className="flex items-center gap-3 w-max">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="24"
@@ -39,11 +39,11 @@ const ProductSpecial = () => {
                   <path d="M21.801 10A10 10 0 1 1 17 3.335"></path>
                   <path d="m9 11 3 3L22 4"></path>
                 </svg>
-                <p className="text-zinc-600 text-xs md:text-sm lg:text-lg">
+                <p className="text-zinc-600 text-sm md:text-base lg:text-lg font-bold">
                   Couleur au choix
                 </p>
               </li>
-              <li className="flex items-center gap-3">
+              <li className="flex items-center gap-3 w-max">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="24"
@@ -59,11 +59,11 @@ const ProductSpecial = () => {
                   <path d="M21.801 10A10 10 0 1 1 17 3.335"></path>
                   <path d="m9 11 3 3L22 4"></path>
                 </svg>
-                <p className="text-zinc-600 text-xs md:text-sm lg:text-lg">
+                <p className="text-zinc-600 text-sm md:text-base lg:text-lg font-bold">
                   Divers types de bois
                 </p>
               </li>
-              <li className="flex items-center gap-3">
+              <li className="flex items-center gap-3 w-max">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="24"
@@ -79,13 +79,13 @@ const ProductSpecial = () => {
                   <path d="M21.801 10A10 10 0 1 1 17 3.335"></path>
                   <path d="m9 11 3 3L22 4"></path>
                 </svg>
-                <p className="text-zinc-600 text-xs md:text-sm lg:text-lg">
+                <p className="text-zinc-600 text-sm md:text-base lg:text-lg font-bold">
                   Personnalisation individuelle
                 </p>
               </li>
             </ul>
           </div>
-          <div className="place-content-end ml-16 lg:ml-28 mt-8 lg:mt-0">
+          <div className="place-content-end ml-12 lg:ml-8 mt-8 lg:mt-0">
             <Link
               href="/contact"
               className="group relative inline-block focus:ring-3 focus:outline-hidden"

@@ -3,7 +3,7 @@ import React from "react"
 const TestimonialSlider = () => {
   return (
     <div className="relative max-w-[85rem] px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto">
-      <blockquote className="text-center lg:mx-auto lg:w-3/5 items-center cursor-grab">
+      <blockquote className="text-center lg:mx-auto lg:w-4/5 items-center cursor-grab">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 512 512"
@@ -17,8 +17,8 @@ const TestimonialSlider = () => {
         <div className="mt-6 lg:mt-10">
           <p className="relative text-xl sm:text-2xl md:text-3xl md:leading-normal font-medium text-gray-800">
             <svg
-              className="absolute top-0 start-0 transform -translate-x-8 -translate-y-8 size-16 text-gray-200 sm:h-24 sm:w-24 dark:text-neutral-700"
-              width="16"
+              className="absolute top-0 start-0 ml-5 transform -translate-x-8 -translate-y-8 size-16 text-gray-200 sm:h-24 sm:w-24 dark:text-neutral-700"
+              width="13"
               height="13"
               viewBox="0 0 16 13"
               fill="none"

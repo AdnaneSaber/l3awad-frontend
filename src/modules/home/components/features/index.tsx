@@ -7,7 +7,7 @@ const Features = () => {
       <h2 className="text-center text-4xl font-bold leading-8 text-black">
         <span className="uppercase">{BRAND_NAME}</span>® fait la différence
       </h2>
-      <div className="container flex flex-col-reverse mx-auto lg:flex-row items-center">
+      <div className=" flex flex-col-reverse mx-auto lg:flex-row items-center">
         <div className="flex flex-col px-6 py-8 space-y-6  sm:p-8 lg:p-12 lg:w-1/2 xl:w-2/5 dark:bg-violet-600 dark:text-gray-50">
           <div className="flex space-x-2 sm:space-x-4">
             <svg

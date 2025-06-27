@@ -10,11 +10,11 @@ export const metadata: Metadata = {
 export default function Philosophie() {
   return (
     <main>
-      <section className="py-6">
+      <section className="pt-6 pb-2">
         <div className="overflow-hidden">
           <div className="">
             <div className="mx-auto flex max-w-5xl flex-col items-center">
-              <div className="z-10 items-center text-center">
+              <div className="z-10 items-center text-center px-2">
                 <h1 className="mb-8 text-pretty text-4xl font-medium lg:text-8xl">
                   We are <span className="uppercase">{BRAND_NAME}</span>®
                 </h1>
@@ -31,22 +31,22 @@ export default function Philosophie() {
             <img
               src="/home/phelo.jpg"
               alt="placeholder"
-              className="mx-auto mt-24 max-h-[700px] w-full max-w-7xl object-cover shadow-lg"
+              className="mx-auto mt-4 max-h-[700px] w-full max-w-7xl object-cover shadow-lg"
             />
           </div>
         </div>
       </section>
-      <section className="py-24 relative xl:mr-0 lg:mr-5 mr-0">
+      <section className="pt-2 pb-2 relative xl:mr-0 lg:mr-5 mr-0">
         <div className="w-full max-w-7xl px-4 md:px-5 lg:px-5 mx-auto">
           <div className="w-full justify-start items-center xl:gap-12 gap-10 grid lg:grid-cols-2 grid-cols-1">
             <div className="w-full flex-col justify-center lg:items-start items-center gap-10 inline-flex">
               <div className="w-full flex-col justify-center items-start gap-8 flex">
                 <div className="flex-col justify-start lg:items-start items-center gap-4 flex">
                   <div className="w-full flex-col justify-start lg:items-start items-center gap-3 flex">
-                    <h2 className="text-black text-6xl font-bold font-manrope leading-normal lg:text-start text-center">
+                    <h2 className="text-black text-2xl lg:text-4xl font-bold font-manrope leading-normal lg:text-start text-center ">
                       The Tale of Our Achievement Story
                     </h2>
-                    <p className="text-gray-500 text-base font-normal leading-relaxed lg:text-start text-center">
+                    <p className="text-gray-500 text-base font-normal leading-relaxed">
                       Our achievement story is a testament to teamwork and
                       perseverance. Together, we{`'`}ve overcome challenges,
                       celebrated victories, and created a narrative of progress
@@ -115,12 +115,12 @@ export default function Philosophie() {
               alt="about Us image"
             />
             <div className="w-full flex-col justify-start lg:items-start items-center gap-10 inline-flex">
-              <div className="w-full flex-col justify-start lg:items-start items-center gap-4 flex">
-                <h2 className="text-gray-900 text-4xl font-bold font-manrope leading-normal lg:text-start text-center">
+              <div className="w-full flex-col justify-start lg:items-start gap-4 flex">
+                <h2 className="text-black text-2xl lg:text-4xl font-bold font-manrope leading-normal lg:text-start">
                   Building Stronger Communities through Collaboration and
                   Empowerment
                 </h2>
-                <p className="text-gray-500 text-base font-normal leading-relaxed lg:text-start text-center">
+                <p className="text-gray-500 text-base font-normal leading-relaxed lg:text-start">
                   Through collaborationperse perspectives and strengths are
                   leveraged to create inclusive environments where everyone has
                   the opportunity to thrive. This approach not only fosters
@@ -133,19 +133,19 @@ export default function Philosophie() {
         </div>
       </section>
       <section className="bg-white">
-        <div className="gap-16 items-center py-8 px-4 mx-auto max-w-screen-xl lg:grid lg:grid-cols-2 lg:py-16 lg:px-6">
+        <div className="gap-16 items-center py-4 px-4 mx-auto max-w-screen-xl lg:grid lg:grid-cols-2 lg:py-16 lg:px-6">
           <div className="font-light text-gray-500 sm:text-lg">
-            <h2 className="mb-4 text-4xl tracking-tight font-extrabold text-gray-900">
+            <h2 className="mb-4 text-2xl lg:text-4xl  font-bold font-manrope leading-normal text-black">
               We didn{`'`}t reinvent the wheel
             </h2>
-            <p className="mb-4">
+            <p className="mb-4 text-gray-500 text-base font-normal leading-relaxed">
               We are strategists, designers and developers. Innovators and
               problem solvers. Small enough to be simple and quick, but big
               enough to deliver the scope you want at the pace you need. Small
               enough to be simple and quick, but big enough to deliver the scope
               you want at the pace you need.
             </p>
-            <p>
+            <p className="text-gray-500 text-base font-normal leading-relaxed">
               We are strategists, designers and developers. Innovators and
               problem solvers. Small enough to be simple and quick.
             </p>
@@ -165,6 +165,9 @@ export default function Philosophie() {
         </div>
       </section>
       <section className="py-4 px-2 mx-auto max-w-screen-xl sm:py-4 lg:px-6">
+        <h2 className="mb-4 text-2xl lg:text-4xl  font-bold font-manrope leading-normal text-black">
+          something we should show you
+        </h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-5 gap-4 h-full">
           <div className="col-span-2 sm:col-span-1 md:col-span-2 bg-gray-50 h-auto md:h-full flex flex-col">
             <a
@@ -178,7 +181,7 @@ export default function Philosophie() {
               />
               <div className="absolute inset-0 bg-gradient-to-b from-gray-900/25 to-gray-900/5"></div>
               <h3 className="z-10 text-2xl font-medium text-white absolute top-0 left-0 p-4 xs:text-xl md:text-3xl">
-                Wines
+                Chest
               </h3>
             </a>
           </div>
@@ -194,7 +197,7 @@ export default function Philosophie() {
               />
               <div className="absolute inset-0 bg-gradient-to-b from-gray-900/25 to-gray-900/5"></div>
               <h3 className="z-10 text-2xl font-medium text-white absolute top-0 left-0 p-4 xs:text-xl md:text-3xl">
-                Gin
+                Couch
               </h3>
             </a>
             <div className="grid gap-4 grid-cols-2 sm:grid-cols-2 lg:grid-cols-2">
@@ -209,7 +212,7 @@ export default function Philosophie() {
                 />
                 <div className="absolute inset-0 bg-gradient-to-b from-gray-900/25 to-gray-900/5"></div>
                 <h3 className="z-10 text-2xl font-medium text-white absolute top-0 left-0 p-4 xs:text-xl md:text-3xl">
-                  Whiskey
+                  Nightstand
                 </h3>
               </a>
               <a
@@ -223,7 +226,7 @@ export default function Philosophie() {
                 />
                 <div className="absolute inset-0 bg-gradient-to-b from-gray-900/25 to-gray-900/5"></div>
                 <h3 className="z-10 text-2xl font-medium text-white absolute top-0 left-0 p-4 xs:text-xl md:text-3xl">
-                  Vodka
+                  Cabinet
                 </h3>
               </a>
             </div>
@@ -240,7 +243,7 @@ export default function Philosophie() {
               />
               <div className="absolute inset-0 bg-gradient-to-b from-gray-900/25 to-gray-900/5"></div>
               <h3 className="z-10 text-2xl font-medium text-white absolute top-0 left-0 p-4 xs:text-xl md:text-3xl">
-                Brandy
+                Dresser
               </h3>
             </a>
           </div>
