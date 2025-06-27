@@ -13,7 +13,7 @@ const Swiper2 = () => {
         modules={[Autoplay]}
         loop={true}
         autoplay={{
-          delay: 3000, // time in ms between slides
+          delay: 3000,
           disableOnInteraction: false,
         }}
         className="mySwiper"
@@ -23,7 +23,6 @@ const Swiper2 = () => {
             <TestimonialSlider />
           </SwiperSlide>
         ))}
-        {/* <div className="swiper-scrollbar" /> */}
       </Swiper>
     </div>
   )

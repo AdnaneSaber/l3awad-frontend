@@ -27,13 +27,13 @@ const Hero = () => {
           >
             <h1 className="text-white mb-4 text-5xl font-bold font-sans italic leading-none text-center lg:text-8xl xl:text-7xl">
               MA BOÎTE{" "}
-              <span className="text-black ml-0 drop-shadow-[0_0_4px_white]">
+              <span className="text-black ml-0 drop-shadow-[0_0_6px_white]">
                 MYSTER
               </span>
             </h1>
             <p className="text-white text-sm lg:text-4xl font-sans italic text-center">
               cachez vos affaires dans une boîte{" "}
-              <span className="thick-underline text-[#000000] relative no-underline uppercase cursor-pointer font-bold">
+              <span className="thick-underline text-[#000000] relative no-underline uppercase cursor-pointer font-bold drop-shadow-[0_0_6px_white]">
                 secrète
               </span>
             </p>
