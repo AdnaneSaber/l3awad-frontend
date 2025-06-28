@@ -8,10 +8,9 @@ const Services = () => {
         <h1 className="sm:text-3xl font-bold tracking-tight text-black text-2xl">
           Plus de sécurité ? {BRAND_NAME}®.
         </h1>
-
         <iframe
-          className="min-w-full mt-12 h-64 md:h-[450px]  overflow-hidden"
-          src="https://vimeo.com/showcase/7060635/video/525707984/embed"
+          className="min-w-full mt-12 h-64 md:h-[450px] overflow-hidden"
+          src="https://player.vimeo.com/video/1097139688?h=296ca4e6a9&title=0&byline=0&portrait=0"
           frameBorder="0"
           allow="autoplay; fullscreen"
           allowFullScreen
