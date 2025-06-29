@@ -1,11 +1,16 @@
+"use client"
 import { Abouts } from "@/types/about"
 import { BRAND_NAME } from "@lib/brand-config"
 import Image from "next/image"
 import Link from "next/link"
-import React from "react"
+import React, { useEffect } from "react"
 import { slugify } from "@lib/slugify"
-
+import AOS from "aos"
+import "aos/dist/aos.css"
 const ListAbout = () => {
+  useEffect(() => {
+    AOS.init({ offset: 100, duration: 1000 })
+  }, [])
   return (
     <div className="relative overflow-hidden pt-16 pb-32 space-y-16">
       {Abouts.map((item, index) => (
@@ -16,6 +21,7 @@ const ListAbout = () => {
             }`}
           >
             <div
+              data-aos="fade-right"
               className={`mx-auto max-w-xl px-4 lg:max-w-none lg:py-16 lg:px-0 flex flex-col justify-center ${
                 index % 2 === 1 ? "lg:col-start-2" : ""
               }`}
@@ -45,6 +51,7 @@ const ListAbout = () => {
             </div>
 
             <div
+              data-aos="fade-left"
               className={`mt-12 sm:mt-16 lg:mt-0 ${
                 index % 2 === 1 ? "lg:col-start-1" : ""
               }`}

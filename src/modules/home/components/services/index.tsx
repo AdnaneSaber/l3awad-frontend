@@ -1,7 +1,14 @@
+"use client"
+import { useEffect } from "react"
+import AOS from "aos"
+import "aos/dist/aos.css"
 import { BRAND_NAME } from "@lib/brand-config"
 import React from "react"
 
 const Services = () => {
+  useEffect(() => {
+    AOS.init({ offset: 100, duration: 1000 })
+  }, [])
   return (
     <section className="bg-white dark:bg-gray-900">
       <div className="sm:container px-6 py-10 mx-auto w-full">
@@ -17,7 +24,10 @@ const Services = () => {
         ></iframe>
 
         <div className="grid grid-cols-1 gap-8 mt-8 xl:mt-12 xl:gap-12 md:grid-cols-2">
-          <div className="p-6 border  border-r-gray-200 dark:border-gray-700">
+          <div
+            className="p-6 border  border-r-gray-200 dark:border-gray-700"
+            data-aos="fade-up-left"
+          >
             <div className="md:flex md:items-start md:-mx-4">
               <div className="mt-4 md:mx-4 md:mt-0">
                 <h1 className="text-xl font-medium text-black capitalize ">
@@ -34,7 +44,10 @@ const Services = () => {
             </div>
           </div>
 
-          <div className="p-6 border  border-r-gray-200 dark:border-gray-700">
+          <div
+            className="p-6 border  border-r-gray-200 dark:border-gray-700"
+            data-aos="fade-up-right"
+          >
             <div className="md:flex md:items-start md:-mx-4">
               <div className="mt-4 md:mx-4 md:mt-0">
                 <h1 className="text-xl font-medium text-black capitalize ">
@@ -51,7 +64,10 @@ const Services = () => {
             </div>
           </div>
 
-          <div className="p-6 border  border-r-gray-200 dark:border-gray-700">
+          <div
+            className="p-6 border  border-r-gray-200 dark:border-gray-700"
+            data-aos="fade-up-left"
+          >
             <div className="md:flex md:items-start md:-mx-4">
               <div className="mt-4 md:mx-4 md:mt-0">
                 <h1 className="text-xl font-medium text-black capitalize ">
@@ -68,7 +84,10 @@ const Services = () => {
             </div>
           </div>
 
-          <div className="p-6 border  border-r-gray-200 dark:border-gray-700">
+          <div
+            className="p-6 border  border-r-gray-200 dark:border-gray-700"
+            data-aos="fade-up-right"
+          >
             <div className="md:flex md:items-start md:-mx-4">
               <div className="mt-4 md:mx-4 md:mt-0">
                 <h1 className="text-xl font-medium text-black capitalize ">
