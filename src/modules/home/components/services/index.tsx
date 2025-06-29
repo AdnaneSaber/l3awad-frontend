@@ -7,7 +7,7 @@ import React from "react"
 
 const Services = () => {
   useEffect(() => {
-    AOS.init({ offset: 100, duration: 1000 })
+    AOS.init({ offset: 100, duration: 1000, once: true })
   }, [])
   return (
     <section className="bg-white dark:bg-gray-900">
@@ -16,6 +16,7 @@ const Services = () => {
           Plus de sécurité ? {BRAND_NAME}®.
         </h1>
         <iframe
+          data-aos="fade-up"
           className="min-w-full mt-12 h-64 md:h-[450px] overflow-hidden"
           src="https://player.vimeo.com/video/1097139688?h=296ca4e6a9&title=0&byline=0&portrait=0"
           frameBorder="0"
@@ -26,7 +27,8 @@ const Services = () => {
         <div className="grid grid-cols-1 gap-8 mt-8 xl:mt-12 xl:gap-12 md:grid-cols-2">
           <div
             className="p-6 border  border-r-gray-200 dark:border-gray-700"
-            data-aos="fade-up-left"
+            data-aos="fade-left"
+            data-aos-delay="0"
           >
             <div className="md:flex md:items-start md:-mx-4">
               <div className="mt-4 md:mx-4 md:mt-0">
@@ -46,7 +48,8 @@ const Services = () => {
 
           <div
             className="p-6 border  border-r-gray-200 dark:border-gray-700"
-            data-aos="fade-up-right"
+            data-aos="fade-right"
+            data-aos-delay="200"
           >
             <div className="md:flex md:items-start md:-mx-4">
               <div className="mt-4 md:mx-4 md:mt-0">
@@ -66,7 +69,8 @@ const Services = () => {
 
           <div
             className="p-6 border  border-r-gray-200 dark:border-gray-700"
-            data-aos="fade-up-left"
+            data-aos="fade-left"
+            data-aos-delay="400"
           >
             <div className="md:flex md:items-start md:-mx-4">
               <div className="mt-4 md:mx-4 md:mt-0">
@@ -86,7 +90,8 @@ const Services = () => {
 
           <div
             className="p-6 border  border-r-gray-200 dark:border-gray-700"
-            data-aos="fade-up-right"
+            data-aos="fade-right"
+            data-aos-delay="600"
           >
             <div className="md:flex md:items-start md:-mx-4">
               <div className="mt-4 md:mx-4 md:mt-0">

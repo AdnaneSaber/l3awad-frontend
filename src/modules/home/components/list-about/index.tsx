@@ -9,7 +9,7 @@ import AOS from "aos"
 import "aos/dist/aos.css"
 const ListAbout = () => {
   useEffect(() => {
-    AOS.init({ offset: 100, duration: 1000 })
+    AOS.init({ offset: 100, duration: 1000, once: true })
   }, [])
   return (
     <div className="relative overflow-hidden pt-16 pb-32 space-y-16">
