@@ -27,16 +27,22 @@ const Footer = () => {
                 toute sécurité.
               </p>
               <p className="mt-2 text-sm text-gray-600">
-                <span className="font-semibold">(219) 555-0114</span>
+                <span className="font-semibold">(080)100-0115</span>
               </p>
 
               <div className="flex space-x-3 mt-3">
-                <a href="#" className="text-black">
+                <Link
+                  href="https://www.facebook.com/profile.php?id=61577095617174"
+                  className="text-black"
+                >
                   <FaFacebook className="w-[30px] h-[30px]" />
-                </a>
-                <a href="#" className="text-black">
+                </Link>
+                <Link
+                  href="https://www.instagram.com/l3awad.ma/"
+                  className="text-black"
+                >
                   <FaInstagramSquare className="w-[30px] h-[30px]" />
-                </a>
+                </Link>
                 <a href="#" className="text-black">
                   <AiFillTikTok className="w-[30px] h-[30px]" />
                 </a>
@@ -54,22 +60,22 @@ const Footer = () => {
               <h3 className="font-semibold mb-2">Mon Compte</h3>
               <ul className="text-sm space-y-2">
                 <li>
-                  <Link href="/account" className="hover:text-blue-600">
+                  <Link href="/account" className="hover:text-black">
                     Mon Compte
                   </Link>
                 </li>
                 <li>
-                  <Link href="/store" className="hover:text-blue-600">
+                  <Link href="/store" className="hover:text-black">
                     Store
                   </Link>
                 </li>
                 <li>
-                  <Link href="/cart" className="hover:text-blue-600">
+                  <Link href="/cart" className="hover:text-black">
                     Panier
                   </Link>
                 </li>
                 <li>
-                  <a href="#" className="hover:text-blue-600">
+                  <a href="#" className="hover:text-black">
                     Liste de souhaits
                   </a>
                 </li>
@@ -84,22 +90,22 @@ const Footer = () => {
               <h3 className="font-semibold mb-2">Aide</h3>
               <ul className="text-sm space-y-2">
                 <li>
-                  <Link href="/contact" className="hover:text-blue-600">
+                  <Link href="/contact" className="hover:text-black">
                     Contact
                   </Link>
                 </li>
                 <li>
-                  <Link href="/faqs" className="hover:text-blue-600">
+                  <Link href="/faqs" className="hover:text-black">
                     FAQs
                   </Link>
                 </li>
                 <li>
-                  <a href="#" className="hover:text-blue-600">
+                  <a href="#" className="hover:text-black">
                     Conditions générales
                   </a>
                 </li>
                 <li>
-                  <a href="#" className="hover:text-blue-600">
+                  <a href="#" className="hover:text-black">
                     Politique de confidentialité
                   </a>
                 </li>
@@ -114,17 +120,17 @@ const Footer = () => {
               <h3 className="font-semibold mb-2">Catégories</h3>
               <ul className="text-sm space-y-2">
                 <li>
-                  <a href="#" className="hover:text-blue-600">
+                  <a href="#" className="hover:text-black">
                     Coffres-forts
                   </a>
                 </li>
                 <li>
-                  <a href="#" className="hover:text-blue-600">
+                  <a href="#" className="hover:text-black">
                     Meubles
                   </a>
                 </li>
                 <li>
-                  <a href="#" className="hover:text-blue-600">
+                  <a href="#" className="hover:text-black">
                     Accessoires
                   </a>
                 </li>
@@ -175,7 +181,9 @@ const Footer = () => {
               data-aos-anchor-placement="center-bottom"
               data-aos-duration="600"
             >
-              © {new Date().getFullYear()} {BRAND_NAME}. Tous droits réservés.
+              © {new Date().getFullYear()}
+              <span className="ml-1 uppercase">{BRAND_NAME}</span>. Tous droits
+              réservés.
             </Text>
           </div>
         </div>
