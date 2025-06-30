@@ -1,3 +1,4 @@
+"use client"
 import { Abouts } from "@/types/about"
 import { BRAND_NAME } from "@lib/brand-config"
 import Image from "next/image"
@@ -16,6 +17,7 @@ const ListAbout = () => {
             }`}
           >
             <div
+              data-aos="fade-right"
               className={`mx-auto max-w-xl px-4 lg:max-w-none lg:py-16 lg:px-0 flex flex-col justify-center ${
                 index % 2 === 1 ? "lg:col-start-2" : ""
               }`}
@@ -45,6 +47,7 @@ const ListAbout = () => {
             </div>
 
             <div
+              data-aos="fade-left"
               className={`mt-12 sm:mt-16 lg:mt-0 ${
                 index % 2 === 1 ? "lg:col-start-1" : ""
               }`}

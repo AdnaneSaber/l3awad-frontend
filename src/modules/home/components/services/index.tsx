@@ -5,20 +5,31 @@ const Services = () => {
   return (
     <section className="bg-white dark:bg-gray-900">
       <div className="sm:container px-6 py-10 mx-auto w-full">
-        <h1 className="sm:text-3xl font-bold tracking-tight text-black text-2xl">
+        <h1
+          className="sm:text-3xl font-bold tracking-tight text-black text-2xl"
+          data-aos="fade-up"
+          data-aos-anchor-placement="center-bottom"
+          data-aos-duration="100"
+        >
           Plus de sécurité ? {BRAND_NAME}®.
         </h1>
-
         <iframe
-          className="min-w-full mt-12 h-64 md:h-[450px]  overflow-hidden"
-          src="https://vimeo.com/showcase/7060635/video/525707984/embed"
+          data-aos="fade-up"
+          data-aos-anchor-placement="center-bottom"
+          data-aos-duration="200"
+          className="min-w-full mt-12 h-64 md:h-[450px] overflow-hidden"
+          src="https://player.vimeo.com/video/1097139688?h=296ca4e6a9&title=0&byline=0&portrait=0"
           frameBorder="0"
           allow="autoplay; fullscreen"
           allowFullScreen
         ></iframe>
 
         <div className="grid grid-cols-1 gap-8 mt-8 xl:mt-12 xl:gap-12 md:grid-cols-2">
-          <div className="p-6 border  border-r-gray-200 dark:border-gray-700">
+          <div
+            className="p-6 border  border-r-gray-200 dark:border-gray-700"
+            data-aos="fade-left"
+            data-aos-delay="0"
+          >
             <div className="md:flex md:items-start md:-mx-4">
               <div className="mt-4 md:mx-4 md:mt-0">
                 <h1 className="text-xl font-medium text-black capitalize ">
@@ -35,7 +46,11 @@ const Services = () => {
             </div>
           </div>
 
-          <div className="p-6 border  border-r-gray-200 dark:border-gray-700">
+          <div
+            className="p-6 border  border-r-gray-200 dark:border-gray-700"
+            data-aos="fade-right"
+            data-aos-delay="200"
+          >
             <div className="md:flex md:items-start md:-mx-4">
               <div className="mt-4 md:mx-4 md:mt-0">
                 <h1 className="text-xl font-medium text-black capitalize ">
@@ -52,7 +67,11 @@ const Services = () => {
             </div>
           </div>
 
-          <div className="p-6 border  border-r-gray-200 dark:border-gray-700">
+          <div
+            className="p-6 border  border-r-gray-200 dark:border-gray-700"
+            data-aos="fade-left"
+            data-aos-delay="400"
+          >
             <div className="md:flex md:items-start md:-mx-4">
               <div className="mt-4 md:mx-4 md:mt-0">
                 <h1 className="text-xl font-medium text-black capitalize ">
@@ -69,7 +88,11 @@ const Services = () => {
             </div>
           </div>
 
-          <div className="p-6 border  border-r-gray-200 dark:border-gray-700">
+          <div
+            className="p-6 border  border-r-gray-200 dark:border-gray-700"
+            data-aos="fade-right"
+            data-aos-delay="600"
+          >
             <div className="md:flex md:items-start md:-mx-4">
               <div className="mt-4 md:mx-4 md:mt-0">
                 <h1 className="text-xl font-medium text-black capitalize ">

@@ -4,12 +4,20 @@ import React from "react"
 const Features = () => {
   return (
     <section className="mt-11">
-      <h2 className="text-center text-4xl font-bold leading-8 text-black">
+      <h2
+        className="text-center text-4xl font-bold leading-8 text-black"
+        data-aos="fade-up"
+      >
         <span className="uppercase">{BRAND_NAME}</span>® fait la différence
       </h2>
       <div className=" flex flex-col-reverse mx-auto lg:flex-row items-center">
         <div className="flex flex-col px-6 py-8 space-y-6  sm:p-8 lg:p-12 lg:w-1/2 xl:w-2/5 dark:bg-violet-600 dark:text-gray-50">
-          <div className="flex space-x-2 sm:space-x-4">
+          <div
+            className="flex space-x-2 sm:space-x-4"
+            data-aos="zoom-in-left"
+            data-aos-easing="ease-in-sine"
+            data-aos-duration="100"
+          >
             <svg
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
@@ -36,7 +44,12 @@ const Features = () => {
               </p>
             </div>
           </div>
-          <div className="flex space-x-2 sm:space-x-4">
+          <div
+            className="flex space-x-2 sm:space-x-4"
+            data-aos="zoom-in-left"
+            data-aos-easing="ease-in-sine"
+            data-aos-duration="200"
+          >
             <svg
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
@@ -62,7 +75,12 @@ const Features = () => {
               </p>
             </div>
           </div>
-          <div className="flex space-x-2 sm:space-x-4">
+          <div
+            className="flex space-x-2 sm:space-x-4"
+            data-aos="zoom-in-left"
+            data-aos-easing="ease-in-sine"
+            data-aos-duration="300"
+          >
             <svg
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
@@ -88,7 +106,12 @@ const Features = () => {
               </p>
             </div>
           </div>
-          <div className="flex space-x-2 sm:space-x-4">
+          <div
+            className="flex space-x-2 sm:space-x-4"
+            data-aos="zoom-in-left"
+            data-aos-easing="ease-in-sine"
+            data-aos-duration="400"
+          >
             <svg
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
@@ -115,7 +138,12 @@ const Features = () => {
             </div>
           </div>
         </div>
-        <div className="lg:w-1/2 xl:w-3/5 dark:bg-gray-100">
+        <div
+          className="lg:w-1/2 xl:w-3/5 dark:bg-gray-100"
+          data-aos="zoom-in-right"
+          data-aos-easing="ease-in-sine"
+          data-aos-duration="350"
+        >
           <div className="flex items-center justify-center p-4 md:p-8 lg:p-12">
             <video
               className="shadow-lg dark:bg-gray-500 aspect-video sm:min-h-96"

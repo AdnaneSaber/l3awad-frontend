@@ -4,7 +4,7 @@ import React from "react"
 
 const Incentive = () => {
   return (
-    <section>
+    <section data-aos="fade-up">
       <div className="xl:w-[90%] lg:w-[95%] md:w-[100%] mx-auto relative md:px-0 px-4 md:my-10 bg-white  overflow-hidden">
         <div className="w-full h-full flex flex-col items-center">
           <section
