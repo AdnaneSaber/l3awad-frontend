@@ -1,4 +1,5 @@
 import { BRAND_NAME } from "@lib/brand-config"
+import Image from "next/image"
 import Link from "next/link"
 import React from "react"
 
@@ -10,25 +11,43 @@ const AboutHome = () => {
           <div className="w-full px-4 lg:w-6/12">
             <div className="flex items-center -mx-3 sm:-mx-4">
               <div className="w-full px-3 sm:px-4 xl:w-1/2">
-                <div className="py-3 sm:py-4">
-                  <img
-                    src="/product 4/fourth-product01.png"
+                <div
+                  className="py-3 sm:py-4"
+                  data-aos="zoom-in-right"
+                  data-aos-delay={100}
+                >
+                  <Image
+                    width={474}
+                    height={474}
+                    src="/product 4/fourth-product01.webp"
                     alt="about"
                     className="w-full"
                   />
                 </div>
-                <div className="py-3 sm:py-4">
-                  <img
-                    src="/product 4/fourth-product02.png"
+                <div
+                  className="py-3 sm:py-4"
+                  data-aos="zoom-in-right"
+                  data-aos-delay={200}
+                >
+                  <Image
+                    width={474}
+                    height={474}
+                    src="/product 4/fourth-product02.webp"
                     alt="about"
                     className="w-full"
                   />
                 </div>
               </div>
               <div className="w-full px-3 sm:px-4 xl:w-1/2">
-                <div className="relative z-10 my-4">
-                  <img
-                    src="/product 4/fourth-product03.png"
+                <div
+                  className="relative z-10 my-4"
+                  data-aos="zoom-in-right"
+                  data-aos-delay={300}
+                >
+                  <Image
+                    width={474}
+                    height={474}
+                    src="/product 4/fourth-product03.webp"
                     alt="about"
                     className="w-full"
                   />
@@ -607,7 +626,11 @@ const AboutHome = () => {
             </div>
           </div>
 
-          <div className="w-full px-4 lg:w-1/2 xl:w-5/12">
+          <div
+            className="w-full px-4 lg:w-1/2 xl:w-5/12"
+            data-aos="zoom-in-left"
+            data-aos-delay={250}
+          >
             <div className="mt-10 lg:mt-0">
               <span className="mb-10 text-3xl font-bold text-black sm:text-[40px]/[48px] ">
                 À propos de nous

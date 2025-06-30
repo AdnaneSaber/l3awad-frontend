@@ -30,7 +30,12 @@ export default async function ProductRail({
   return (
     <div className="content-container pt-6 pb-1 small:pt-12 small:pb-1">
       <div className="flex justify-between mb-8">
-        <Text className="text-3xl font-bold tracking-tight text-black sm:text-4xl">
+        <Text
+          className="text-3xl font-bold tracking-tight text-black sm:text-4xl"
+          data-aos="fade-up"
+          data-aos-anchor-placement="center-bottom"
+          data-aos-duration="100"
+        >
           {collection.title}
         </Text>
         <InteractiveLink href={`/collections/${collection.handle}`}>
@@ -39,8 +44,8 @@ export default async function ProductRail({
       </div>
       <div className="grid gap-x-4 gap-y-8 sm:grid-cols-2 md:gap-x-6 lg:grid-cols-3 xl:grid-cols-4">
         {pricedProducts &&
-          pricedProducts.map((product) => (
-            <div key={product.id}>
+          pricedProducts.map((product, i) => (
+            <div key={product.id} data-aos="fade-up" data-aos-delay={i * 150}>
               <ProductPreview product={product} region={region} isFeatured />
             </div>
           ))}

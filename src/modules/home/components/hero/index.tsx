@@ -1,14 +1,6 @@
-"use client"
-
-import { useEffect } from "react"
-import AOS from "aos"
-import "aos/dist/aos.css"
 import { BRAND_NAME } from "@lib/brand-config"
 
 const Hero = () => {
-  useEffect(() => {
-    AOS.init({ offset: 100, duration: 1000 })
-  }, [])
   return (
     <div className="relative pt-48 pb-12 bg-black xl:pt-60 sm:pb-16 lg:pb-32 xl:pb-48 2xl:pb-56">
       <div className="absolute inset-0">

@@ -1,22 +1,22 @@
-"use client"
-import { useEffect } from "react"
-import AOS from "aos"
-import "aos/dist/aos.css"
 import { BRAND_NAME } from "@lib/brand-config"
 import React from "react"
 
 const Services = () => {
-  useEffect(() => {
-    AOS.init({ offset: 100, duration: 1000, once: true })
-  }, [])
   return (
     <section className="bg-white dark:bg-gray-900">
       <div className="sm:container px-6 py-10 mx-auto w-full">
-        <h1 className="sm:text-3xl font-bold tracking-tight text-black text-2xl">
+        <h1
+          className="sm:text-3xl font-bold tracking-tight text-black text-2xl"
+          data-aos="fade-up"
+          data-aos-anchor-placement="center-bottom"
+          data-aos-duration="100"
+        >
           Plus de sécurité ? {BRAND_NAME}®.
         </h1>
         <iframe
           data-aos="fade-up"
+          data-aos-anchor-placement="center-bottom"
+          data-aos-duration="200"
           className="min-w-full mt-12 h-64 md:h-[450px] overflow-hidden"
           src="https://player.vimeo.com/video/1097139688?h=296ca4e6a9&title=0&byline=0&portrait=0"
           frameBorder="0"

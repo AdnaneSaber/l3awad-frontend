@@ -3,14 +3,10 @@ import { Abouts } from "@/types/about"
 import { BRAND_NAME } from "@lib/brand-config"
 import Image from "next/image"
 import Link from "next/link"
-import React, { useEffect } from "react"
+import React from "react"
 import { slugify } from "@lib/slugify"
-import AOS from "aos"
-import "aos/dist/aos.css"
+
 const ListAbout = () => {
-  useEffect(() => {
-    AOS.init({ offset: 100, duration: 1000, once: true })
-  }, [])
   return (
     <div className="relative overflow-hidden pt-16 pb-32 space-y-16">
       {Abouts.map((item, index) => (

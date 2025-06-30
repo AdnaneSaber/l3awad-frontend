@@ -16,6 +16,7 @@ import React from "react"
 import { BRAND_NAME } from "@lib/brand-config"
 import MainHero from "@modules/home/components/main"
 import { Blog } from "@modules/home/components/blog"
+import ClientOnlyAOSWrapper from "@lib/ClientOnlyAOSWrapper"
 
 export const metadata: Metadata = {
   title: `${BRAND_NAME} | Home`,
@@ -42,19 +43,19 @@ export default async function Home(props: {
 
   return (
     <React.Fragment>
-      {/* <MainHero /> */}
-      <Hero />
-      {/* <Blog /> */}
-      <FeaturedProducts collections={collections} region={region} />
-      <AboutHome />
-      <Services />
-      <ListAbout />
-      <Swiper2 />
-      <Incentive />
-      <WhyUs />
-      <Features />
-      <HomeBlock />
-      <Philosophie />
+      <ClientOnlyAOSWrapper>
+        <Hero />
+        <FeaturedProducts collections={collections} region={region} />
+        <AboutHome />
+        <Services />
+        <ListAbout />
+        <Swiper2 />
+        <Incentive />
+        <WhyUs />
+        <Features />
+        <HomeBlock />
+        <Philosophie />
+      </ClientOnlyAOSWrapper>
     </React.Fragment>
   )
 }

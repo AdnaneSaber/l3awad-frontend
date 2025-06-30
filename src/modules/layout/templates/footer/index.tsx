@@ -2,14 +2,23 @@ import { BRAND_NAME } from "@lib/brand-config"
 import { Text } from "@medusajs/ui"
 import Link from "next/link"
 import React from "react"
-
+import { AiFillTikTok } from "react-icons/ai"
+import {
+  FaFacebook,
+  FaInstagramSquare,
+  FaPinterestSquare,
+} from "react-icons/fa"
 const Footer = () => {
   return (
     <footer className="bg-white flex justify-center items-center mt-auto">
       <div className="bg-white text-gray-700 border-t border-gray-200">
         <div className=" mx-auto px-6 py-8">
           <div className="grid grid-cols-1 md:grid-cols-4 gap-6">
-            <div>
+            <div
+              data-aos="fade-up"
+              data-aos-anchor-placement="center-bottom"
+              data-aos-duration="100"
+            >
               <h2 className="text-xl font-semibold flex items-center space-x-2 uppercase">
                 <span>{BRAND_NAME}</span>
               </h2>
@@ -22,22 +31,26 @@ const Footer = () => {
               </p>
 
               <div className="flex space-x-3 mt-3">
-                <a href="#" className="text-blue-600">
-                  <i className="fab fa-facebook"></i>
+                <a href="#" className="text-black">
+                  <FaFacebook className="w-[30px] h-[30px]" />
                 </a>
-                <a href="#" className="text-red-600">
-                  <i className="fab fa-reddit"></i>
+                <a href="#" className="text-black">
+                  <FaInstagramSquare className="w-[30px] h-[30px]" />
                 </a>
-                <a href="#" className="text-green-500">
-                  <i className="fab fa-whatsapp"></i>
+                <a href="#" className="text-black">
+                  <AiFillTikTok className="w-[30px] h-[30px]" />
                 </a>
-                <a href="#" className="text-pink-600">
-                  <i className="fab fa-pinterest"></i>
+                <a href="#" className="text-black">
+                  <FaPinterestSquare className="w-[30px] h-[30px]" />
                 </a>
               </div>
             </div>
 
-            <div>
+            <div
+              data-aos="fade-up"
+              data-aos-anchor-placement="center-bottom"
+              data-aos-duration="200"
+            >
               <h3 className="font-semibold mb-2">Mon Compte</h3>
               <ul className="text-sm space-y-2">
                 <li>
@@ -63,7 +76,11 @@ const Footer = () => {
               </ul>
             </div>
 
-            <div>
+            <div
+              data-aos="fade-up"
+              data-aos-anchor-placement="center-bottom"
+              data-aos-duration="300"
+            >
               <h3 className="font-semibold mb-2">Aide</h3>
               <ul className="text-sm space-y-2">
                 <li>
@@ -89,7 +106,11 @@ const Footer = () => {
               </ul>
             </div>
 
-            <div>
+            <div
+              data-aos="fade-up"
+              data-aos-anchor-placement="center-bottom"
+              data-aos-duration="400"
+            >
               <h3 className="font-semibold mb-2">Catégories</h3>
               <ul className="text-sm space-y-2">
                 <li>
@@ -111,19 +132,13 @@ const Footer = () => {
             </div>
           </div>
 
-          <div className="flex flex-col md:flex-row justify-between items-center mt-6">
-            <div className="flex space-x-2">
-              {/* <img
-                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-v52tLnvL3FEjfxjPvZWbvUMYvVUtAm9R6A&s"
-                alt="Google Play"
-                className="h-10"
-              />
-              <img
-                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSJgk5tpxJC_1CAnsXwo2VvBGyQGI-o5c1PJw&s"
-                alt="App Store"
-                className="h-10"
-              /> */}
-            </div>
+          <div
+            className="flex flex-col md:flex-row justify-between items-center mt-6"
+            data-aos="fade-up"
+            data-aos-anchor-placement="center-bottom"
+            data-aos-duration="500"
+          >
+            <div className="flex space-x-2"></div>
             <div className="flex space-x-2 mt-4 md:mt-0">
               <img
                 src="https://www.logo.wine/a/logo/Apple_Pay/Apple_Pay-White-Dark-Background-Logo.wine.svg"
@@ -154,7 +169,12 @@ const Footer = () => {
           </div>
 
           <div className="text-center text-sm text-gray-500 mt-6 border-t pt-4">
-            <Text className="txt-compact-small">
+            <Text
+              className="txt-compact-small"
+              data-aos="fade-up"
+              data-aos-anchor-placement="center-bottom"
+              data-aos-duration="600"
+            >
               © {new Date().getFullYear()} {BRAND_NAME}. Tous droits réservés.
             </Text>
           </div>

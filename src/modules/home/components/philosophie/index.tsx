@@ -74,7 +74,10 @@ export default function Philosophie() {
       <div className="relative p-6 md:p-16">
         <div className="relative z-10 lg:grid lg:grid-cols-12 lg:gap-16 lg:items-center">
           <div className="mb-10 lg:mb-0 lg:col-span-6 lg:col-start-8 lg:order-2">
-            <h2 className="text-2xl font-bold sm:text-3xl text-black">
+            <h2
+              className="text-2xl font-bold sm:text-3xl text-black"
+              data-aos="fade-up"
+            >
               Pourquoi la sécurité discrète est essentielle ?
             </h2>
 
@@ -83,7 +86,7 @@ export default function Philosophie() {
               role="tablist"
               aria-orientation="vertical"
             >
-              {tabs.map((tab) => (
+              {tabs.map((tab, index) => (
                 <button
                   key={tab.id}
                   type="button"
@@ -96,6 +99,10 @@ export default function Philosophie() {
                       ? "bg-white shadow-md dark:bg-neutral-700"
                       : ""
                   }`}
+                  data-aos="zoom-in-left"
+                  data-aos-easing="ease-in-sine"
+                  data-aos-duration="100"
+                  data-aos-delay={index * 100}
                 >
                   <span className="flex gap-x-6">
                     {tab.icon}
@@ -131,6 +138,9 @@ export default function Philosophie() {
                       alt="Features Image"
                       width={560}
                       height={720}
+                      data-aos="zoom-in-right"
+                      data-aos-easing="ease-in-sine"
+                      data-aos-duration="250"
                     />
                   </div>
                 ) : null
