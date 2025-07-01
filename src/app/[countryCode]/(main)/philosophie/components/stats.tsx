@@ -1,14 +1,17 @@
+import Image from "next/image"
 import React from "react"
 
 const Stats = () => {
   return (
-    <section className="py-12 relative">
+    <section className="py-8 relative">
       <div className="w-full max-w-7xl px-4 md:px-5 lg:px-5 mx-auto">
         <div className="w-full justify-start items-center gap-8 grid lg:grid-cols-2 grid-cols-1">
-          <img
+          <Image
             className="lg:mx-0 mx-auto h-full object-cover"
             src="/home/old-man.webp"
             alt="about Us image"
+            width={603}
+            height={402}
           />
           <div className="w-full flex-col justify-start lg:items-start items-center gap-10 inline-flex">
             <div className="w-full flex-col justify-start lg:items-start gap-4 flex">

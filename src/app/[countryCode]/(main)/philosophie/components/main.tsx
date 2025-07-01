@@ -1,4 +1,5 @@
 import { BRAND_NAME } from "@lib/brand-config"
+import Image from "next/image"
 import React from "react"
 
 const Main = () => {
@@ -21,9 +22,11 @@ const Main = () => {
               </p>
             </div>
           </div>
-          <img
+          <Image
             src="/home/phelo.jpg"
             alt="placeholder"
+            width={1280}
+            height={700}
             className="mx-auto mt-4 max-h-[700px] w-full max-w-7xl object-cover shadow-lg"
           />
         </div>

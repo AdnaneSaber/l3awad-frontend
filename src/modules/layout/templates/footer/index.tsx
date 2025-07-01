@@ -1,5 +1,6 @@
 import { BRAND_NAME } from "@lib/brand-config"
 import { Text } from "@medusajs/ui"
+import Image from "next/image"
 import Link from "next/link"
 import React from "react"
 import { AiFillTikTok } from "react-icons/ai"
@@ -27,7 +28,7 @@ const Footer = () => {
                 toute sécurité.
               </p>
               <p className="mt-2 text-sm text-gray-600">
-                <span className="font-semibold">(080)100-0115</span>
+                <span className="font-semibold">(080) 100-0115</span>
               </p>
 
               <div className="flex space-x-3 mt-3">
@@ -146,30 +147,45 @@ const Footer = () => {
           >
             <div className="flex space-x-2"></div>
             <div className="flex space-x-2 mt-4 md:mt-0">
-              <img
+              <Image
                 src="https://www.logo.wine/a/logo/Apple_Pay/Apple_Pay-White-Dark-Background-Logo.wine.svg"
                 alt="Apple Pay"
+                width={40}
+                height={30}
                 className="h-[30px] w-10 rounded-md"
+                unoptimized
               />
-              <img
+              <Image
                 src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSynWEtLag--sQ4XlfTwHh9_DAnfcglW7C3iw&s"
                 alt="Visa"
+                width={40}
+                height={30}
                 className="h-[30px] w-10 rounded-md"
+                unoptimized
               />
-              <img
+              <Image
                 src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT6mJsEDg1aR_JCFb3ohk2nCxjgSvkWnpmlKg&s"
                 alt="Mastercard"
+                width={40}
+                height={30}
                 className="h-[30px] w-10 rounded-md"
+                unoptimized
               />
-              <img
+              <Image
                 src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQveKfGcJ1tSEY8bLg52DxvVrFDJXmxXJgv1Q&s"
                 alt="discover"
+                width={40}
+                height={30}
                 className="h-[30px] w-10 rounded-md"
+                unoptimized
               />
-              <img
+              <Image
                 src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSDS0zyuJdI4e7E1VGaNDAVtRn3fGTzr0PBOA&s"
                 alt="Secure Payment"
+                width={40}
+                height={30}
                 className="h-[30px] w-10 rounded-md"
+                unoptimized
               />
             </div>
           </div>

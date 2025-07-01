@@ -1,3 +1,4 @@
+import Image from "next/image"
 import React from "react"
 
 const Infos = () => {
@@ -21,15 +22,19 @@ const Infos = () => {
           </p>
         </div>
         <div className="grid grid-cols-2 gap-4 mt-8">
-          <img
-            className="w-full"
-            src="/product 3/third-product04.png"
+          <Image
+            className="w-[300px] h-[300px] object-cover"
+            src="/home/pelosophie1.jpg"
             alt="office content 1"
+            width={300}
+            height={300}
           />
-          <img
-            className="mt-4 w-full lg:mt-10"
-            src="/product 3/third-product07.png"
+          <Image
+            className="w-[300px] h-[300px] object-cover"
+            src="/home/pelosophie2.jpg"
             alt="office content 2"
+            width={300}
+            height={300}
           />
         </div>
       </div>

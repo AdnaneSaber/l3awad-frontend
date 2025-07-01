@@ -1,3 +1,4 @@
+import Image from "next/image"
 import React from "react"
 
 const WhyUs = () => {
@@ -21,7 +22,13 @@ const WhyUs = () => {
               title="Verrouillage discret sans serrure visible."
             >
               <div className="flex justify-center">
-                <img src="/why us/wood.png" className="w-32 mb-3" />
+                <Image
+                  src="/why us/wood.webp"
+                  alt="why us ?"
+                  width={128}
+                  height={128}
+                  className="w-32 mb-3"
+                />
               </div>
               <h2 className="title-font font-regular text-2xl text-gray-900">
                 Meilleure qualité du bois
@@ -39,7 +46,13 @@ const WhyUs = () => {
               title="Des meubles qui s’intègrent parfaitement à votre intérieur."
             >
               <div className="flex justify-center">
-                <img src="/why us/rfid.png" className="w-32 mb-3" />
+                <Image
+                  src="/why us/rfid.webp"
+                  alt="Sécurité RFID"
+                  width={128}
+                  height={128}
+                  className="w-32 mb-3"
+                />
               </div>
               <h2 className="title-font font-regular text-2xl text-gray-900">
                 Sécurité RFID
@@ -57,8 +70,11 @@ const WhyUs = () => {
               title="Conçu et fabriqué au Maroc par des artisans passionnés."
             >
               <div className="flex justify-center">
-                <img
-                  src="/why us/fast-delivery (1).png"
+                <Image
+                  src="/why us/fast-delivery (1).webp"
+                  alt="Livraison rapide"
+                  width={128}
+                  height={128}
                   className="w-32 mb-3"
                 />
               </div>
@@ -78,7 +94,13 @@ const WhyUs = () => {
               title="Partout au Maroc sous 72h."
             >
               <div className="flex justify-center">
-                <img src="/why us/cash-on-delivery.png" className="w-32 mb-3" />
+                <Image
+                  src="/why us/cash-on-delivery.webp"
+                  alt="Paiement à la livraison"
+                  width={128}
+                  height={128}
+                  className="w-32 mb-3"
+                />
               </div>
               <h2 className="title-font font-regular text-2xl text-gray-900">
                 Paiement à la livraison

@@ -1,3 +1,4 @@
+import Image from "next/image"
 import React from "react"
 
 const About = () => {
@@ -62,10 +63,12 @@ const About = () => {
           </div>
           <div className="w-full lg:justify-start justify-center items-start flex">
             <div className="sm:w-[564px] w-full sm:h-[646px] h-full sm:bg-gray-100  sm:border border-gray-200 relative">
-              <img
+              <Image
                 className="sm:mt-5 sm:ml-5 w-full h-full  object-cover"
-                src="/home/carpenter-contact.jpg"
+                src="/home/carpenter-contact.webp"
                 alt="about Us image"
+                width={562}
+                height={644}
               />
             </div>
           </div>
