@@ -9,10 +9,18 @@ const Main = () => {
         <div className="">
           <div className="mx-auto flex max-w-5xl flex-col items-center">
             <div className="z-10 items-center text-center px-2">
-              <h1 className="mb-8 text-pretty text-4xl font-medium lg:text-8xl">
+              <h1
+                className="mb-8 text-pretty text-4xl font-medium lg:text-8xl"
+                data-aos="zoom-in"
+                data-aos-delay={200}
+              >
                 We are <span className="uppercase">{BRAND_NAME}</span>®
               </h1>
-              <p className="mx-auto max-w-screen-md text-zinc-600 lg:text-xl">
+              <p
+                className="mx-auto max-w-screen-md text-zinc-600 lg:text-xl"
+                data-aos="zoom-in"
+                data-aos-delay={300}
+              >
                 Une jeune équipe d{`'`}artisans a développé un nouveau concept
                 de mobilier innovant, fruit de leur vision, avec un savoir-faire
                 artisanal et une grande motivation. Les meilleurs matériaux et
@@ -23,6 +31,8 @@ const Main = () => {
             </div>
           </div>
           <Image
+            data-aos="zoom-out"
+            data-aos-delay={400}
             src="/home/phelo.jpg"
             alt="placeholder"
             width={1280}

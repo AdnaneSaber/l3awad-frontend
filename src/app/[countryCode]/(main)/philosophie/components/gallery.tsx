@@ -3,7 +3,10 @@ import React from "react"
 
 const Gallery = () => {
   return (
-    <section className="py-4 px-2 mx-auto max-w-screen-xl sm:py-4 lg:px-6">
+    <section
+      className="py-4 px-2 mx-auto max-w-screen-xl sm:py-4 lg:px-6"
+      data-aos="zoom-out"
+    >
       <h2 className="mb-4 text-2xl lg:text-4xl  font-bold font-manrope leading-normal text-black">
         something we should show you
       </h2>
