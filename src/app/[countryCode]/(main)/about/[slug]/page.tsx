@@ -8,6 +8,8 @@ import { getRegion } from "@lib/data/regions"
 import { listCollections } from "@lib/data/collections"
 import FeaturedProducts from "@modules/home/components/featured-products"
 import { InfiniteMovingCardsDemo } from "@modules/home/components/InfiniteMovingCardsdemo"
+import AboutContent from "./components/AboutContent"
+import ClientOnlyAOSWrapper from "@lib/ClientOnlyAOSWrapper"
 
 export async function generateMetadata({
   params,
@@ -35,7 +37,6 @@ export default async function AboutDetailPage({
 
   if (!aboutItem) return notFound()
 
-  // 🔽 Fetch region and collections
   const region = await getRegion(countryCode)
   const { collections } = await listCollections({
     fields: "id, handle, title",
@@ -44,51 +45,45 @@ export default async function AboutDetailPage({
   const fullText = aboutItem.object_text.replaceAll("{BRAND_NAME}", BRAND_NAME)
 
   return (
-    <div className="max-w-screen-xl mx-auto relative">
-      <div
-        className="bg-cover bg-center text-center overflow-hidden"
-        style={{
-          minHeight: "500px",
-          backgroundImage: `url(${aboutItem.photo})`,
-        }}
-        title={aboutItem.name}
-      ></div>
-      <div className="max-w-7xl mx-auto">
-        <div className="bg-white rounded-b lg:rounded-b-none lg:rounded-r flex flex-col justify-between leading-normal">
-          <section className="bg-white dark:bg-gray-900">
-            <div className="gap-16 items-center py-4 px-4 mx-auto max-w-screen-xl lg:grid lg:grid-cols-2 lg:py-16 lg:px-6">
-              <div className="font-light text-gray-500 sm:text-lg dark:text-gray-400">
-                <h2 className="mb-4 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white">
-                  {aboutItem.name}
-                </h2>
-                <p className="mb-4">{fullText}</p>
-                <p>
-                  We are strategists, designers and developers. Innovators and
-                  problem solvers. Small enough to be simple and quick.
-                </p>
-              </div>
-              <div className="grid grid-cols-2 gap-4 mt-8">
-                <img
-                  className="w-full"
-                  src={aboutItem.photo2}
-                  alt="office content 1"
-                />
-                <img
-                  className="mt-4 w-full lg:mt-10"
-                  src={aboutItem.photo3}
-                  alt="office content 2"
-                />
-              </div>
-            </div>
-          </section>
-        </div>
-      </div>
+    <ClientOnlyAOSWrapper>
+      <div className="max-w-screen-xl mx-auto relative">
+        <div
+          data-aos="fade-down"
+          data-aos-duration="300"
+          className="bg-cover bg-center text-center overflow-hidden"
+          style={{
+            minHeight: "500px",
+            backgroundImage: `url(${aboutItem.photo})`,
+          }}
+          title={aboutItem.name}
+        ></div>
 
-      <InfiniteMovingCardsDemo />
-      <ProductSpecial />
-      {region && collections && (
-        <FeaturedProducts collections={collections} region={region} />
-      )}
-    </div>
+        <div
+          className="max-w-7xl mx-auto"
+          data-aos="fade-down"
+          data-aos-duration="400"
+        >
+          <div className="bg-white rounded-b lg:rounded-b-none lg:rounded-r flex flex-col justify-between leading-normal">
+            <AboutContent
+              name={aboutItem.name}
+              fullText={fullText}
+              photo2={aboutItem.photo2}
+              photo3={aboutItem.photo3}
+            />
+          </div>
+        </div>
+        <div data-aos="zoom-out-up" data-aos-duration="600">
+          <InfiniteMovingCardsDemo />
+        </div>
+
+        <div data-aos="zoom-out-down" data-aos-duration="700">
+          <ProductSpecial />
+        </div>
+
+        {region && collections && (
+          <FeaturedProducts collections={collections} region={region} />
+        )}
+      </div>
+    </ClientOnlyAOSWrapper>
   )
 }
