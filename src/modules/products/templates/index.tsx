@@ -6,18 +6,27 @@ import ProductTabs from "./product-tab"
 import ProductSpecial from "./product-special"
 import { HttpTypes } from "@medusajs/types"
 import { notFound } from "next/navigation"
+import FeaturedProducts from "@modules/home/components/featured-products"
+import { listCollections } from "@lib/data/collections"
 
 type ProductTemplateProps = {
   product: HttpTypes.StoreProduct
   region: HttpTypes.StoreRegion
 }
 
-const ProductTemplate: React.FC<ProductTemplateProps> = ({
+const ProductTemplate: React.FC<ProductTemplateProps> = async ({
   product,
   region,
 }) => {
   if (!product || !product.id) {
     return notFound()
+  }
+  const { collections } = await listCollections({
+    fields: "id, handle, title",
+  })
+
+  if (!collections || !region) {
+    return null
   }
   return (
     <div className="md:max-w-[80%] md:mx-auto md:px-4">
@@ -25,7 +34,7 @@ const ProductTemplate: React.FC<ProductTemplateProps> = ({
       <ProductTabs product={product} region={region} />
       <ProductSpecial />
       <ProductBlock />
-      <OurProducts title="Related Product" />
+      <FeaturedProducts collections={collections} region={region} />
     </div>
   )
 }

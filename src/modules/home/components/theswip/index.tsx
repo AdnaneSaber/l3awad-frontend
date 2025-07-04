@@ -8,7 +8,7 @@ import TestimonialSlider from "../testimonials"
 const Swiper2 = () => {
   return (
     <div
-      className="swiper-container max-h-[40rem]"
+      className="swiper-container max-h-[22rem]"
       data-aos="fade-up"
       data-aos-anchor-placement="center-bottom"
       data-aos-duration="600"

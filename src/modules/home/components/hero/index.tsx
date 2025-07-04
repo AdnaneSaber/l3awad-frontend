@@ -1,13 +1,16 @@
 import { BRAND_NAME } from "@lib/brand-config"
+import Image from "next/image"
 
 const Hero = () => {
   return (
     <div className="relative pt-48 pb-12 bg-black xl:pt-60 sm:pb-16 lg:pb-32 xl:pb-48 2xl:pb-56">
       <div className="absolute inset-0">
-        <img
-          className="object-cover w-full h-full"
-          src="/home/l3awad_hero.png"
+        <Image
+          src="/home/l3awad_hero.webp"
           alt={BRAND_NAME}
+          fill
+          className="object-cover"
+          priority
         />
       </div>
 
@@ -37,3 +40,10 @@ const Hero = () => {
 }
 
 export default Hero
+// <Image
+//   className="object-cover w-full h-full"
+//   src="/home/l3awad_hero.webp"
+//   alt={BRAND_NAME}
+//   width={1900}
+//   height={700}
+// />

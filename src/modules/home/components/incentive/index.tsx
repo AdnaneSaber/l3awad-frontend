@@ -1,4 +1,5 @@
 import { BRAND_NAME } from "@lib/brand-config"
+import Image from "next/image"
 import Link from "next/link"
 import React from "react"
 
@@ -11,10 +12,12 @@ const Incentive = () => {
             className="w-full relative flex items-center flex-col lg:flex-row"
             id="about"
           >
-            <img
+            <Image
               className="lg:w-1/2 shadow-2xl ring-1 ring-black ring-opacity-5"
-              src="/home/philo.jpeg"
+              src="/home/philo.webp"
               alt="port image"
+              width={837}
+              height={557}
             />
 
             <div className="lg:absolute lg:left-[40%] md:left-[30%] lg:w-[55%] lg:p-12 sm:p-6 p-4 flex flex-col justify-center bg-white">

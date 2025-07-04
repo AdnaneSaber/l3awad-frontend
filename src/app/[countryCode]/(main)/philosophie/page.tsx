@@ -6,6 +6,7 @@ import About from "./components/about"
 import Stats from "./components/stats"
 import Infos from "./components/infos"
 import Gallery from "./components/gallery"
+import ClientOnlyAOSWrapper from "@lib/ClientOnlyAOSWrapper"
 export const metadata: Metadata = {
   title: `${BRAND_NAME} | Philosophie`,
   description:
@@ -15,11 +16,13 @@ export const metadata: Metadata = {
 export default function Philosophie() {
   return (
     <main>
-      <Main />
-      <About />
-      <Stats />
-      <Infos />
-      <Gallery />
+      <ClientOnlyAOSWrapper>
+        <Main />
+        <About />
+        <Stats />
+        <Infos />
+        <Gallery />
+      </ClientOnlyAOSWrapper>
     </main>
   )
 }

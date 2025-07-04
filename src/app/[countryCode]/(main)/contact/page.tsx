@@ -1,5 +1,6 @@
 import { BRAND_NAME } from "@lib/brand-config"
 import { Metadata } from "next"
+import Image from "next/image"
 import React from "react"
 export const metadata: Metadata = {
   title: `${BRAND_NAME} | Contact`,
@@ -9,10 +10,19 @@ export const metadata: Metadata = {
 export default function ContactForm() {
   return (
     <main className="flex overflow-hidden">
-      <div className="flex-1 hidden lg:block">
-        <img src="/home/contact.jpg" className="w-full h-screen object-cover" />
+      <div className="flex-1 hidden lg:block" data-aos="flip-left">
+        <Image
+          src="/home/contact.jpg"
+          alt="contact"
+          className="w-full h-screen object-cover"
+          width={930}
+          height={935}
+        />
       </div>
-      <div className="py-12 flex-1 lg:flex lg:justify-center lg:h-screen lg:overflow-auto">
+      <div
+        className="py-12 flex-1 lg:flex lg:justify-center lg:h-screen lg:overflow-auto"
+        data-aos="flip-right"
+      >
         <div className="max-w-lg flex-1 mx-auto px-4 text-gray-600">
           <div>
             <h3 className="text-gray-800 text-3xl font-semibold sm:text-4xl">

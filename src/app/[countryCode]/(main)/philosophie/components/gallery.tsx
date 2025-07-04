@@ -1,8 +1,12 @@
+import Image from "next/image"
 import React from "react"
 
 const Gallery = () => {
   return (
-    <section className="py-4 px-2 mx-auto max-w-screen-xl sm:py-4 lg:px-6">
+    <section
+      className="py-4 px-2 mx-auto max-w-screen-xl sm:py-4 lg:px-6"
+      data-aos="zoom-out"
+    >
       <h2 className="mb-4 text-2xl lg:text-4xl  font-bold font-manrope leading-normal text-black">
         something we should show you
       </h2>
@@ -12,10 +16,13 @@ const Gallery = () => {
             href=""
             className="group relative flex flex-col overflow-hidden px-4 pb-4 pt-40 flex-grow"
           >
-            <img
+            <Image
               src="/product 3/third-product04.png"
-              alt=""
+              alt="gallery"
+              fill
               className="absolute inset-0 h-full w-full object-cover group-hover:scale-105 transition-transform duration-500 ease-in-out"
+              sizes="(max-width: 768px) 100vw, 20vw"
+              priority
             />
             <div className="absolute inset-0 bg-gradient-to-b from-gray-900/25 to-gray-900/5"></div>
             <h3 className="z-10 text-2xl font-medium text-white absolute top-0 left-0 p-4 xs:text-xl md:text-3xl">
@@ -28,10 +35,13 @@ const Gallery = () => {
             href=""
             className="group relative flex flex-col overflow-hidden px-4 pb-4 pt-40 mb-4"
           >
-            <img
+            <Image
               src="/product 3/third-product05.png"
-              alt=""
+              alt="gallery"
+              fill
               className="absolute inset-0 h-full w-full object-cover group-hover:scale-105 transition-transform duration-500 ease-in-out"
+              sizes="(max-width: 768px) 100vw, 20vw"
+              priority
             />
             <div className="absolute inset-0 bg-gradient-to-b from-gray-900/25 to-gray-900/5"></div>
             <h3 className="z-10 text-2xl font-medium text-white absolute top-0 left-0 p-4 xs:text-xl md:text-3xl">
@@ -43,10 +53,13 @@ const Gallery = () => {
               href=""
               className="group relative flex flex-col overflow-hidden px-4 pb-4 pt-40"
             >
-              <img
+              <Image
                 src="/product 3/third-product06.png"
-                alt=""
+                alt="Nightstand"
+                fill
                 className="absolute inset-0 h-full w-full object-cover group-hover:scale-105 transition-transform duration-500 ease-in-out"
+                sizes="(max-width: 768px) 100vw, 20vw"
+                priority={false}
               />
               <div className="absolute inset-0 bg-gradient-to-b from-gray-900/25 to-gray-900/5"></div>
               <h3 className="z-10 text-2xl font-medium text-white absolute top-0 left-0 p-4 xs:text-xl md:text-3xl">
@@ -57,10 +70,13 @@ const Gallery = () => {
               href=""
               className="group relative flex flex-col overflow-hidden px-4 pb-4 pt-40"
             >
-              <img
+              <Image
                 src="/product 3/third-product07.png"
-                alt=""
+                alt="Cabinet"
+                fill
                 className="absolute inset-0 h-full w-full object-cover group-hover:scale-105 transition-transform duration-500 ease-in-out"
+                sizes="(max-width: 768px) 100vw, 20vw"
+                priority={false}
               />
               <div className="absolute inset-0 bg-gradient-to-b from-gray-900/25 to-gray-900/5"></div>
               <h3 className="z-10 text-2xl font-medium text-white absolute top-0 left-0 p-4 xs:text-xl md:text-3xl">
@@ -74,10 +90,13 @@ const Gallery = () => {
             href=""
             className="group relative flex flex-col overflow-hidden px-4 pb-4 pt-40 flex-grow"
           >
-            <img
+            <Image
               src="/product 3/third-product08.png"
-              alt=""
+              alt="Dresser"
+              fill
               className="absolute inset-0 h-full w-full object-cover group-hover:scale-105 transition-transform duration-500 ease-in-out"
+              sizes="(max-width: 768px) 100vw, 20vw"
+              priority={false}
             />
             <div className="absolute inset-0 bg-gradient-to-b from-gray-900/25 to-gray-900/5"></div>
             <h3 className="z-10 text-2xl font-medium text-white absolute top-0 left-0 p-4 xs:text-xl md:text-3xl">
