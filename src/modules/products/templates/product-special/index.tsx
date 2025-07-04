@@ -85,7 +85,7 @@ const ProductSpecial = () => {
               </li>
             </ul>
           </div>
-          <div className="place-content-end ml-12 lg:ml-8 mt-8 lg:mt-0">
+          <div className="justify-center lg:place-content-end ml-4 lg:ml-8 mt-4 lg:mt-0">
             <Link
               href="/contact"
               className="group relative inline-block focus:ring-3 focus:outline-hidden"

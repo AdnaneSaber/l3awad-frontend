@@ -8,7 +8,7 @@ import { slugify } from "@lib/slugify"
 
 const ListAbout = () => {
   return (
-    <div className="relative overflow-hidden py-16 space-y-16">
+    <div className="relative overflow-hidden py-1 space-y-16">
       {Abouts.map((item, index) => (
         <div key={item.id} className="relative">
           <div
