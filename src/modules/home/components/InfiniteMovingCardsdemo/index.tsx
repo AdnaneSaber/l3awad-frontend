@@ -3,8 +3,8 @@ import { InfiniteMovingCards } from "../infinite-moving-cards"
 
 export function InfiniteMovingCardsDemo() {
   return (
-    <div className="h-[30rem] flex flex-col antialiased bg-white items-center justify-center relative overflow-hidden">
-      <h2 className="flex justify-center text-4xl font-bold text-black my-6">
+    <div className="flex flex-col antialiased bg-white items-center justify-center relative overflow-hidden">
+      <h2 className="flex text-center text-4xl font-bold text-black my-6">
         Nos Clients Témoignages!
       </h2>
       <InfiniteMovingCards
